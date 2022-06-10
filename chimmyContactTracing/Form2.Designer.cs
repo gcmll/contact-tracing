@@ -67,13 +67,14 @@
             this.txtBoxEmailAddress = new System.Windows.Forms.TextBox();
             this.lblHealthDeclaration = new System.Windows.Forms.Label();
             this.pnlVaccination = new System.Windows.Forms.Panel();
-            this.rdBtnNo = new System.Windows.Forms.RadioButton();
             this.rdBtnYesFullyVaccinated = new System.Windows.Forms.RadioButton();
             this.rdBtnYes1stOnly = new System.Windows.Forms.RadioButton();
             this.lblVaccinationQuestion = new System.Windows.Forms.Label();
             this.pnlSick = new System.Windows.Forms.Panel();
+            this.rdBtnNo = new System.Windows.Forms.RadioButton();
             this.rdBtnYes = new System.Windows.Forms.RadioButton();
             this.lblSickQuestion = new System.Windows.Forms.Label();
+            this.rdBtnNotVaccinated = new System.Windows.Forms.RadioButton();
             this.pnlSex.SuspendLayout();
             this.pnlVaccination.SuspendLayout();
             this.pnlSick.SuspendLayout();
@@ -490,7 +491,7 @@
             // pnlVaccination
             // 
             this.pnlVaccination.BackColor = System.Drawing.Color.Transparent;
-            this.pnlVaccination.Controls.Add(this.rdBtnNo);
+            this.pnlVaccination.Controls.Add(this.rdBtnNotVaccinated);
             this.pnlVaccination.Controls.Add(this.rdBtnYesFullyVaccinated);
             this.pnlVaccination.Controls.Add(this.rdBtnYes1stOnly);
             this.pnlVaccination.Controls.Add(this.lblVaccinationQuestion);
@@ -499,20 +500,6 @@
             this.pnlVaccination.Name = "pnlVaccination";
             this.pnlVaccination.Size = new System.Drawing.Size(180, 88);
             this.pnlVaccination.TabIndex = 0;
-            // 
-            // rdBtnNo
-            // 
-            this.rdBtnNo.AutoSize = true;
-            this.rdBtnNo.BackColor = System.Drawing.Color.Transparent;
-            this.rdBtnNo.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdBtnNo.ForeColor = System.Drawing.Color.White;
-            this.rdBtnNo.Location = new System.Drawing.Point(1, 59);
-            this.rdBtnNo.Name = "rdBtnNo";
-            this.rdBtnNo.Size = new System.Drawing.Size(39, 19);
-            this.rdBtnNo.TabIndex = 0;
-            this.rdBtnNo.TabStop = true;
-            this.rdBtnNo.Text = "No";
-            this.rdBtnNo.UseVisualStyleBackColor = false;
             // 
             // rdBtnYesFullyVaccinated
             // 
@@ -557,13 +544,29 @@
             // pnlSick
             // 
             this.pnlSick.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSick.Controls.Add(this.rdBtnNo);
             this.pnlSick.Controls.Add(this.rdBtnYes);
             this.pnlSick.Controls.Add(this.lblSickQuestion);
             this.pnlSick.ForeColor = System.Drawing.Color.Transparent;
-            this.pnlSick.Location = new System.Drawing.Point(249, 451);
+            this.pnlSick.Location = new System.Drawing.Point(261, 451);
             this.pnlSick.Name = "pnlSick";
             this.pnlSick.Size = new System.Drawing.Size(236, 88);
             this.pnlSick.TabIndex = 72;
+            // 
+            // rdBtnNo
+            // 
+            this.rdBtnNo.AutoSize = true;
+            this.rdBtnNo.BackColor = System.Drawing.Color.Transparent;
+            this.rdBtnNo.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBtnNo.ForeColor = System.Drawing.Color.White;
+            this.rdBtnNo.Location = new System.Drawing.Point(53, 18);
+            this.rdBtnNo.Name = "rdBtnNo";
+            this.rdBtnNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.rdBtnNo.Size = new System.Drawing.Size(39, 19);
+            this.rdBtnNo.TabIndex = 0;
+            this.rdBtnNo.TabStop = true;
+            this.rdBtnNo.Text = "No";
+            this.rdBtnNo.UseVisualStyleBackColor = false;
             // 
             // rdBtnYes
             // 
@@ -591,6 +594,20 @@
             this.lblSickQuestion.Size = new System.Drawing.Size(211, 15);
             this.lblSickQuestion.TabIndex = 0;
             this.lblSickQuestion.Text = "Have you been sick in the last 7 days?";
+            // 
+            // rdBtnNotVaccinated
+            // 
+            this.rdBtnNotVaccinated.AutoSize = true;
+            this.rdBtnNotVaccinated.BackColor = System.Drawing.Color.Transparent;
+            this.rdBtnNotVaccinated.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBtnNotVaccinated.ForeColor = System.Drawing.Color.White;
+            this.rdBtnNotVaccinated.Location = new System.Drawing.Point(1, 60);
+            this.rdBtnNotVaccinated.Name = "rdBtnNotVaccinated";
+            this.rdBtnNotVaccinated.Size = new System.Drawing.Size(39, 19);
+            this.rdBtnNotVaccinated.TabIndex = 0;
+            this.rdBtnNotVaccinated.TabStop = true;
+            this.rdBtnNotVaccinated.Text = "No";
+            this.rdBtnNotVaccinated.UseVisualStyleBackColor = false;
             // 
             // Start
             // 
@@ -694,9 +711,10 @@
         private RadioButton rdBtnYes1stOnly;
         private Label lblVaccinationQuestion;
         private RadioButton rdBtnYesFullyVaccinated;
-        private RadioButton rdBtnNo;
         private Panel pnlSick;
         private RadioButton rdBtnYes;
         private Label lblSickQuestion;
+        private RadioButton rdBtnNo;
+        private RadioButton rdBtnNotVaccinated;
     }
 }

@@ -53,14 +53,19 @@ namespace chimmyContactTracing
                 {
                     profileInformation.WriteLine("Are you vaccinated?: Yes, fully vaccinated");
                 }
-                else if (rdBtnNo.Checked)
+                else if (rdBtnNotVaccinated.Checked)
                 {
                     profileInformation.WriteLine("Are you vaccinated?: No");
                 }
 
+
                 if (rdBtnYes.Checked)
                 {
                     profileInformation.WriteLine("Have you been sick in the last 7 days?: Yes");
+                }
+                else if (rdBtnNo.Checked)
+                {
+                    profileInformation.WriteLine("Have you been sick in the last 7 days?: No");
                 }
 
                 profileInformation.Close();
