@@ -21,7 +21,14 @@ namespace chimmyContactTracing
         {
             try
             {
-                MessageBox.Show("Your registration has been received. Thank you!", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult saveInformation = MessageBox.Show("Your registration has been received. Thank you!", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                if (saveInformation == DialogResult.OK)
+                {
+                    Hide();
+                    Home f1 = new Home();
+                    f1.Show();
+                }
             }
             catch (Exception)
             {
