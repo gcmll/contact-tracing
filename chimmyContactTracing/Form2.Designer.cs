@@ -63,6 +63,8 @@
             this.txtBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.lblLandline = new System.Windows.Forms.Label();
             this.txtBoxLandline = new System.Windows.Forms.TextBox();
+            this.lblEmailAddress = new System.Windows.Forms.Label();
+            this.txtBoxEmailAddress = new System.Windows.Forms.TextBox();
             this.pnlSex.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -443,12 +445,33 @@
             this.txtBoxLandline.Size = new System.Drawing.Size(150, 23);
             this.txtBoxLandline.TabIndex = 0;
             // 
+            // lblEmailAddress
+            // 
+            this.lblEmailAddress.AutoSize = true;
+            this.lblEmailAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmailAddress.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEmailAddress.ForeColor = System.Drawing.Color.White;
+            this.lblEmailAddress.Location = new System.Drawing.Point(358, 365);
+            this.lblEmailAddress.Name = "lblEmailAddress";
+            this.lblEmailAddress.Size = new System.Drawing.Size(84, 15);
+            this.lblEmailAddress.TabIndex = 0;
+            this.lblEmailAddress.Text = "Email Address";
+            // 
+            // txtBoxEmailAddress
+            // 
+            this.txtBoxEmailAddress.Location = new System.Drawing.Point(360, 383);
+            this.txtBoxEmailAddress.Name = "txtBoxEmailAddress";
+            this.txtBoxEmailAddress.Size = new System.Drawing.Size(207, 23);
+            this.txtBoxEmailAddress.TabIndex = 0;
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.lblEmailAddress);
+            this.Controls.Add(this.txtBoxEmailAddress);
             this.Controls.Add(this.lblLandline);
             this.Controls.Add(this.txtBoxLandline);
             this.Controls.Add(this.lblPhoneNumber);
@@ -529,5 +552,7 @@
         private TextBox txtBoxPhoneNumber;
         private Label lblLandline;
         private TextBox txtBoxLandline;
+        private Label lblEmailAddress;
+        private TextBox txtBoxEmailAddress;
     }
 }

@@ -43,6 +43,7 @@ namespace chimmyContactTracing
                 profileInformation.WriteLine("Address: " + txtBoxAddress.Text);
                 profileInformation.WriteLine("Phone Number: " + txtBoxPhoneNumber.Text);
                 profileInformation.WriteLine("Landline: " + txtBoxLandline.Text);
+                profileInformation.WriteLine("Email Address: " + txtBoxEmailAddress.Text);
                 profileInformation.Close();
             }
             catch (Exception)
