@@ -53,6 +53,8 @@
             this.lblBirthDate = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.txtBoxAge = new System.Windows.Forms.TextBox();
+            this.txtBoxNationality = new System.Windows.Forms.TextBox();
+            this.lblNationality = new System.Windows.Forms.Label();
             this.pnlSex.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -320,7 +322,7 @@
             this.lblAge.BackColor = System.Drawing.Color.Transparent;
             this.lblAge.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblAge.ForeColor = System.Drawing.Color.White;
-            this.lblAge.Location = new System.Drawing.Point(321, 218);
+            this.lblAge.Location = new System.Drawing.Point(323, 219);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(29, 15);
             this.lblAge.TabIndex = 0;
@@ -328,10 +330,29 @@
             // 
             // txtBoxAge
             // 
-            this.txtBoxAge.Location = new System.Drawing.Point(323, 235);
+            this.txtBoxAge.Location = new System.Drawing.Point(325, 236);
             this.txtBoxAge.Name = "txtBoxAge";
             this.txtBoxAge.Size = new System.Drawing.Size(40, 23);
             this.txtBoxAge.TabIndex = 0;
+            // 
+            // txtBoxNationality
+            // 
+            this.txtBoxNationality.Location = new System.Drawing.Point(383, 236);
+            this.txtBoxNationality.Name = "txtBoxNationality";
+            this.txtBoxNationality.Size = new System.Drawing.Size(184, 23);
+            this.txtBoxNationality.TabIndex = 0;
+            // 
+            // lblNationality
+            // 
+            this.lblNationality.AutoSize = true;
+            this.lblNationality.BackColor = System.Drawing.Color.Transparent;
+            this.lblNationality.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNationality.ForeColor = System.Drawing.Color.White;
+            this.lblNationality.Location = new System.Drawing.Point(380, 218);
+            this.lblNationality.Name = "lblNationality";
+            this.lblNationality.Size = new System.Drawing.Size(66, 15);
+            this.lblNationality.TabIndex = 0;
+            this.lblNationality.Text = "Nationality";
             // 
             // Start
             // 
@@ -339,6 +360,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.txtBoxNationality);
+            this.Controls.Add(this.lblNationality);
             this.Controls.Add(this.lblAge);
             this.Controls.Add(this.txtBoxAge);
             this.Controls.Add(this.dtpBirthDate);
@@ -399,5 +422,7 @@
         private Label lblBirthDate;
         private Label lblAge;
         private TextBox txtBoxAge;
+        private TextBox txtBoxNationality;
+        private Label lblNationality;
     }
 }
