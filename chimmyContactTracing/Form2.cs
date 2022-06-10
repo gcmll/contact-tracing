@@ -69,6 +69,7 @@ namespace chimmyContactTracing
                 }
 
                 profileInformation.WriteLine("Sickness: " + txtBoxSickness.Text);
+                profileInformation.WriteLine("");
                 profileInformation.Close();
             }
             catch (Exception)
