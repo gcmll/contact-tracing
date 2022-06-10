@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace chimmyContactTracing
 {
@@ -19,6 +20,20 @@ namespace chimmyContactTracing
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            try
+            {
+                StreamWriter profileInformation = new StreamWriter(@"C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\Chimmy-ContactTracing-Information.txt", true);
+
+                profileInformation.WriteLine("Date and Time: " + dtpDateTime1.Text);
+                profileInformation.Close();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
             try
             {
                 DialogResult saveInformation = MessageBox.Show("Your registration has been received. Thank you!", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
