@@ -43,12 +43,14 @@
             this.lblSuffix = new System.Windows.Forms.Label();
             this.txtBoxSuffix = new System.Windows.Forms.TextBox();
             this.pnlSex = new System.Windows.Forms.Panel();
+            this.rdBtnFemale = new System.Windows.Forms.RadioButton();
             this.rdBtnMale = new System.Windows.Forms.RadioButton();
             this.lblSex = new System.Windows.Forms.Label();
             this.rdButton2 = new System.Windows.Forms.RadioButton();
             this.rdButton1 = new System.Windows.Forms.RadioButton();
             this.label14 = new System.Windows.Forms.Label();
-            this.rdBtnFemale = new System.Windows.Forms.RadioButton();
+            this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.lblBirthDate = new System.Windows.Forms.Label();
             this.pnlSex.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -205,6 +207,20 @@
             this.pnlSex.Size = new System.Drawing.Size(127, 44);
             this.pnlSex.TabIndex = 0;
             // 
+            // rdBtnFemale
+            // 
+            this.rdBtnFemale.AutoSize = true;
+            this.rdBtnFemale.BackColor = System.Drawing.Color.Transparent;
+            this.rdBtnFemale.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBtnFemale.ForeColor = System.Drawing.Color.White;
+            this.rdBtnFemale.Location = new System.Drawing.Point(56, 18);
+            this.rdBtnFemale.Name = "rdBtnFemale";
+            this.rdBtnFemale.Size = new System.Drawing.Size(59, 19);
+            this.rdBtnFemale.TabIndex = 0;
+            this.rdBtnFemale.TabStop = true;
+            this.rdBtnFemale.Text = "Female";
+            this.rdBtnFemale.UseVisualStyleBackColor = false;
+            // 
             // rdBtnMale
             // 
             this.rdBtnMale.AutoSize = true;
@@ -271,19 +287,30 @@
             this.label14.TabIndex = 62;
             this.label14.Text = "Sex";
             // 
-            // rdBtnFemale
+            // dtpBirthDate
             // 
-            this.rdBtnFemale.AutoSize = true;
-            this.rdBtnFemale.BackColor = System.Drawing.Color.Transparent;
-            this.rdBtnFemale.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdBtnFemale.ForeColor = System.Drawing.Color.White;
-            this.rdBtnFemale.Location = new System.Drawing.Point(56, 18);
-            this.rdBtnFemale.Name = "rdBtnFemale";
-            this.rdBtnFemale.Size = new System.Drawing.Size(59, 19);
-            this.rdBtnFemale.TabIndex = 0;
-            this.rdBtnFemale.TabStop = true;
-            this.rdBtnFemale.Text = "Female";
-            this.rdBtnFemale.UseVisualStyleBackColor = false;
+            this.dtpBirthDate.Checked = false;
+            this.dtpBirthDate.CustomFormat = " MM/dd/yyyy";
+            this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpBirthDate.Location = new System.Drawing.Point(177, 236);
+            this.dtpBirthDate.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
+            this.dtpBirthDate.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtpBirthDate.Name = "dtpBirthDate";
+            this.dtpBirthDate.Size = new System.Drawing.Size(129, 23);
+            this.dtpBirthDate.TabIndex = 0;
+            this.dtpBirthDate.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            // 
+            // lblBirthDate
+            // 
+            this.lblBirthDate.AutoSize = true;
+            this.lblBirthDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblBirthDate.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBirthDate.ForeColor = System.Drawing.Color.White;
+            this.lblBirthDate.Location = new System.Drawing.Point(174, 218);
+            this.lblBirthDate.Name = "lblBirthDate";
+            this.lblBirthDate.Size = new System.Drawing.Size(72, 15);
+            this.lblBirthDate.TabIndex = 0;
+            this.lblBirthDate.Text = "Date of Birth";
             // 
             // Start
             // 
@@ -291,6 +318,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.dtpBirthDate);
+            this.Controls.Add(this.lblBirthDate);
             this.Controls.Add(this.pnlSex);
             this.Controls.Add(this.rdButton2);
             this.Controls.Add(this.rdButton1);
@@ -343,5 +372,7 @@
         private RadioButton rdButton1;
         private Label label14;
         private RadioButton rdBtnFemale;
+        private DateTimePicker dtpBirthDate;
+        private Label lblBirthDate;
     }
 }

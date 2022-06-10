@@ -36,6 +36,7 @@ namespace chimmyContactTracing
                     profileInformation.WriteLine("Sex: Female");
                 }
 
+                profileInformation.WriteLine("Date of Birth: " + dtpBirthDate.Text);
                 profileInformation.Close();
             }
             catch (Exception)
