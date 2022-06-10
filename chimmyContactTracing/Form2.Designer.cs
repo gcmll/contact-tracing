@@ -61,6 +61,8 @@
             this.lblExactAddress = new System.Windows.Forms.Label();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.txtBoxPhoneNumber = new System.Windows.Forms.TextBox();
+            this.lblLandline = new System.Windows.Forms.Label();
+            this.txtBoxLandline = new System.Windows.Forms.TextBox();
             this.pnlSex.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -422,12 +424,33 @@
             this.txtBoxPhoneNumber.Size = new System.Drawing.Size(147, 23);
             this.txtBoxPhoneNumber.TabIndex = 0;
             // 
+            // lblLandline
+            // 
+            this.lblLandline.AutoSize = true;
+            this.lblLandline.BackColor = System.Drawing.Color.Transparent;
+            this.lblLandline.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblLandline.ForeColor = System.Drawing.Color.White;
+            this.lblLandline.Location = new System.Drawing.Point(188, 365);
+            this.lblLandline.Name = "lblLandline";
+            this.lblLandline.Size = new System.Drawing.Size(53, 15);
+            this.lblLandline.TabIndex = 0;
+            this.lblLandline.Text = "Landline";
+            // 
+            // txtBoxLandline
+            // 
+            this.txtBoxLandline.Location = new System.Drawing.Point(191, 383);
+            this.txtBoxLandline.Name = "txtBoxLandline";
+            this.txtBoxLandline.Size = new System.Drawing.Size(150, 23);
+            this.txtBoxLandline.TabIndex = 0;
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.lblLandline);
+            this.Controls.Add(this.txtBoxLandline);
             this.Controls.Add(this.lblPhoneNumber);
             this.Controls.Add(this.txtBoxPhoneNumber);
             this.Controls.Add(this.lblExactAddress);
@@ -504,5 +527,7 @@
         private Label lblExactAddress;
         private Label lblPhoneNumber;
         private TextBox txtBoxPhoneNumber;
+        private Label lblLandline;
+        private TextBox txtBoxLandline;
     }
 }

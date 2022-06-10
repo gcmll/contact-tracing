@@ -42,6 +42,7 @@ namespace chimmyContactTracing
                 profileInformation.WriteLine("Nationality: " + txtBoxNationality.Text);
                 profileInformation.WriteLine("Address: " + txtBoxAddress.Text);
                 profileInformation.WriteLine("Phone Number: " + txtBoxPhoneNumber.Text);
+                profileInformation.WriteLine("Landline: " + txtBoxLandline.Text);
                 profileInformation.Close();
             }
             catch (Exception)
