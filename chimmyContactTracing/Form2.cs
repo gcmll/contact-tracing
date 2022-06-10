@@ -68,6 +68,7 @@ namespace chimmyContactTracing
                     profileInformation.WriteLine("Have you been sick in the last 7 days?: No");
                 }
 
+                profileInformation.WriteLine("Sickness: " + txtBoxSickness.Text);
                 profileInformation.Close();
             }
             catch (Exception)

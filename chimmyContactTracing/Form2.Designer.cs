@@ -67,14 +67,16 @@
             this.txtBoxEmailAddress = new System.Windows.Forms.TextBox();
             this.lblHealthDeclaration = new System.Windows.Forms.Label();
             this.pnlVaccination = new System.Windows.Forms.Panel();
+            this.rdBtnNotVaccinated = new System.Windows.Forms.RadioButton();
             this.rdBtnYesFullyVaccinated = new System.Windows.Forms.RadioButton();
             this.rdBtnYes1stOnly = new System.Windows.Forms.RadioButton();
             this.lblVaccinationQuestion = new System.Windows.Forms.Label();
             this.pnlSick = new System.Windows.Forms.Panel();
+            this.lblSickness = new System.Windows.Forms.Label();
+            this.txtBoxSickness = new System.Windows.Forms.TextBox();
             this.rdBtnNo = new System.Windows.Forms.RadioButton();
             this.rdBtnYes = new System.Windows.Forms.RadioButton();
             this.lblSickQuestion = new System.Windows.Forms.Label();
-            this.rdBtnNotVaccinated = new System.Windows.Forms.RadioButton();
             this.pnlSex.SuspendLayout();
             this.pnlVaccination.SuspendLayout();
             this.pnlSick.SuspendLayout();
@@ -88,7 +90,7 @@
             this.btnSave.Location = new System.Drawing.Point(449, 545);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(118, 31);
-            this.btnSave.TabIndex = 0;
+            this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -102,7 +104,7 @@
             this.lblDateTime.Location = new System.Drawing.Point(358, 77);
             this.lblDateTime.Name = "lblDateTime";
             this.lblDateTime.Size = new System.Drawing.Size(83, 15);
-            this.lblDateTime.TabIndex = 0;
+            this.lblDateTime.TabIndex = 2;
             this.lblDateTime.Text = "Date and Time";
             // 
             // dtpDateTime
@@ -115,7 +117,7 @@
             this.dtpDateTime.MinDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             this.dtpDateTime.Name = "dtpDateTime";
             this.dtpDateTime.Size = new System.Drawing.Size(207, 23);
-            this.dtpDateTime.TabIndex = 0;
+            this.dtpDateTime.TabIndex = 3;
             // 
             // lblPersonalInfo
             // 
@@ -126,7 +128,7 @@
             this.lblPersonalInfo.Location = new System.Drawing.Point(31, 124);
             this.lblPersonalInfo.Name = "lblPersonalInfo";
             this.lblPersonalInfo.Size = new System.Drawing.Size(181, 19);
-            this.lblPersonalInfo.TabIndex = 0;
+            this.lblPersonalInfo.TabIndex = 4;
             this.lblPersonalInfo.Text = "PERSONAL INFORMATION";
             // 
             // lblName
@@ -138,7 +140,7 @@
             this.lblName.Location = new System.Drawing.Point(32, 147);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(39, 15);
-            this.lblName.TabIndex = 0;
+            this.lblName.TabIndex = 5;
             this.lblName.Text = "Name";
             // 
             // lblLastName
@@ -150,7 +152,7 @@
             this.lblLastName.Location = new System.Drawing.Point(35, 189);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(54, 14);
-            this.lblLastName.TabIndex = 0;
+            this.lblLastName.TabIndex = 7;
             this.lblLastName.Text = "Last Name";
             // 
             // txtBoxLastName
@@ -159,7 +161,7 @@
             this.txtBoxLastName.Location = new System.Drawing.Point(35, 165);
             this.txtBoxLastName.Name = "txtBoxLastName";
             this.txtBoxLastName.Size = new System.Drawing.Size(150, 23);
-            this.txtBoxLastName.TabIndex = 0;
+            this.txtBoxLastName.TabIndex = 6;
             // 
             // lblFirstName
             // 
@@ -170,7 +172,7 @@
             this.lblFirstName.Location = new System.Drawing.Point(191, 189);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(55, 14);
-            this.lblFirstName.TabIndex = 0;
+            this.lblFirstName.TabIndex = 9;
             this.lblFirstName.Text = "First Name";
             // 
             // txtBoxFirstName
@@ -179,7 +181,7 @@
             this.txtBoxFirstName.Location = new System.Drawing.Point(191, 165);
             this.txtBoxFirstName.Name = "txtBoxFirstName";
             this.txtBoxFirstName.Size = new System.Drawing.Size(150, 23);
-            this.txtBoxFirstName.TabIndex = 0;
+            this.txtBoxFirstName.TabIndex = 8;
             // 
             // lblMiddleName
             // 
@@ -190,7 +192,7 @@
             this.lblMiddleName.Location = new System.Drawing.Point(347, 189);
             this.lblMiddleName.Name = "lblMiddleName";
             this.lblMiddleName.Size = new System.Drawing.Size(67, 14);
-            this.lblMiddleName.TabIndex = 0;
+            this.lblMiddleName.TabIndex = 11;
             this.lblMiddleName.Text = "Middle Name";
             // 
             // txtBoxMiddleName
@@ -199,7 +201,7 @@
             this.txtBoxMiddleName.Location = new System.Drawing.Point(347, 165);
             this.txtBoxMiddleName.Name = "txtBoxMiddleName";
             this.txtBoxMiddleName.Size = new System.Drawing.Size(150, 23);
-            this.txtBoxMiddleName.TabIndex = 0;
+            this.txtBoxMiddleName.TabIndex = 10;
             // 
             // lblSuffix
             // 
@@ -210,7 +212,7 @@
             this.lblSuffix.Location = new System.Drawing.Point(503, 191);
             this.lblSuffix.Name = "lblSuffix";
             this.lblSuffix.Size = new System.Drawing.Size(34, 14);
-            this.lblSuffix.TabIndex = 0;
+            this.lblSuffix.TabIndex = 13;
             this.lblSuffix.Text = "Suffix";
             // 
             // txtBoxSuffix
@@ -219,7 +221,7 @@
             this.txtBoxSuffix.Location = new System.Drawing.Point(503, 165);
             this.txtBoxSuffix.Name = "txtBoxSuffix";
             this.txtBoxSuffix.Size = new System.Drawing.Size(64, 23);
-            this.txtBoxSuffix.TabIndex = 0;
+            this.txtBoxSuffix.TabIndex = 12;
             // 
             // pnlSex
             // 
@@ -231,7 +233,7 @@
             this.pnlSex.Location = new System.Drawing.Point(38, 218);
             this.pnlSex.Name = "pnlSex";
             this.pnlSex.Size = new System.Drawing.Size(127, 44);
-            this.pnlSex.TabIndex = 0;
+            this.pnlSex.TabIndex = 14;
             // 
             // rdBtnFemale
             // 
@@ -242,7 +244,7 @@
             this.rdBtnFemale.Location = new System.Drawing.Point(56, 18);
             this.rdBtnFemale.Name = "rdBtnFemale";
             this.rdBtnFemale.Size = new System.Drawing.Size(59, 19);
-            this.rdBtnFemale.TabIndex = 0;
+            this.rdBtnFemale.TabIndex = 17;
             this.rdBtnFemale.TabStop = true;
             this.rdBtnFemale.Text = "Female";
             this.rdBtnFemale.UseVisualStyleBackColor = false;
@@ -256,7 +258,7 @@
             this.rdBtnMale.Location = new System.Drawing.Point(1, 18);
             this.rdBtnMale.Name = "rdBtnMale";
             this.rdBtnMale.Size = new System.Drawing.Size(49, 19);
-            this.rdBtnMale.TabIndex = 0;
+            this.rdBtnMale.TabIndex = 16;
             this.rdBtnMale.TabStop = true;
             this.rdBtnMale.Text = "Male";
             this.rdBtnMale.UseVisualStyleBackColor = false;
@@ -270,7 +272,7 @@
             this.lblSex.Location = new System.Drawing.Point(-2, 0);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(26, 15);
-            this.lblSex.TabIndex = 0;
+            this.lblSex.TabIndex = 15;
             this.lblSex.Text = "Sex";
             // 
             // rdButton2
@@ -323,7 +325,7 @@
             this.dtpBirthDate.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(129, 23);
-            this.dtpBirthDate.TabIndex = 0;
+            this.dtpBirthDate.TabIndex = 19;
             this.dtpBirthDate.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // lblBirthDate
@@ -335,7 +337,7 @@
             this.lblBirthDate.Location = new System.Drawing.Point(174, 218);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(72, 15);
-            this.lblBirthDate.TabIndex = 0;
+            this.lblBirthDate.TabIndex = 18;
             this.lblBirthDate.Text = "Date of Birth";
             // 
             // lblAge
@@ -347,7 +349,7 @@
             this.lblAge.Location = new System.Drawing.Point(323, 219);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(29, 15);
-            this.lblAge.TabIndex = 0;
+            this.lblAge.TabIndex = 20;
             this.lblAge.Text = "Age";
             // 
             // txtBoxAge
@@ -355,14 +357,14 @@
             this.txtBoxAge.Location = new System.Drawing.Point(325, 236);
             this.txtBoxAge.Name = "txtBoxAge";
             this.txtBoxAge.Size = new System.Drawing.Size(40, 23);
-            this.txtBoxAge.TabIndex = 0;
+            this.txtBoxAge.TabIndex = 21;
             // 
             // txtBoxNationality
             // 
             this.txtBoxNationality.Location = new System.Drawing.Point(383, 236);
             this.txtBoxNationality.Name = "txtBoxNationality";
             this.txtBoxNationality.Size = new System.Drawing.Size(184, 23);
-            this.txtBoxNationality.TabIndex = 0;
+            this.txtBoxNationality.TabIndex = 23;
             // 
             // lblNationality
             // 
@@ -373,7 +375,7 @@
             this.lblNationality.Location = new System.Drawing.Point(380, 218);
             this.lblNationality.Name = "lblNationality";
             this.lblNationality.Size = new System.Drawing.Size(66, 15);
-            this.lblNationality.TabIndex = 0;
+            this.lblNationality.TabIndex = 22;
             this.lblNationality.Text = "Nationality";
             // 
             // lblContactInfo
@@ -385,7 +387,7 @@
             this.lblContactInfo.Location = new System.Drawing.Point(34, 275);
             this.lblContactInfo.Name = "lblContactInfo";
             this.lblContactInfo.Size = new System.Drawing.Size(178, 19);
-            this.lblContactInfo.TabIndex = 0;
+            this.lblContactInfo.TabIndex = 24;
             this.lblContactInfo.Text = "CONTACT INFORMATION";
             // 
             // lblAddress
@@ -397,7 +399,7 @@
             this.lblAddress.Location = new System.Drawing.Point(35, 298);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(52, 15);
-            this.lblAddress.TabIndex = 0;
+            this.lblAddress.TabIndex = 25;
             this.lblAddress.Text = "Address";
             // 
             // txtBoxAddress
@@ -405,7 +407,7 @@
             this.txtBoxAddress.Location = new System.Drawing.Point(38, 316);
             this.txtBoxAddress.Name = "txtBoxAddress";
             this.txtBoxAddress.Size = new System.Drawing.Size(529, 23);
-            this.txtBoxAddress.TabIndex = 0;
+            this.txtBoxAddress.TabIndex = 26;
             // 
             // lblExactAddress
             // 
@@ -416,7 +418,7 @@
             this.lblExactAddress.Location = new System.Drawing.Point(38, 340);
             this.lblExactAddress.Name = "lblExactAddress";
             this.lblExactAddress.Size = new System.Drawing.Size(260, 14);
-            this.lblExactAddress.TabIndex = 0;
+            this.lblExactAddress.TabIndex = 27;
             this.lblExactAddress.Text = "House No., Street/Block, Barangay, Town/City, Provicne";
             // 
             // lblPhoneNumber
@@ -428,7 +430,7 @@
             this.lblPhoneNumber.Location = new System.Drawing.Point(35, 365);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(87, 15);
-            this.lblPhoneNumber.TabIndex = 0;
+            this.lblPhoneNumber.TabIndex = 28;
             this.lblPhoneNumber.Text = "Phone Number";
             // 
             // txtBoxPhoneNumber
@@ -436,7 +438,7 @@
             this.txtBoxPhoneNumber.Location = new System.Drawing.Point(38, 383);
             this.txtBoxPhoneNumber.Name = "txtBoxPhoneNumber";
             this.txtBoxPhoneNumber.Size = new System.Drawing.Size(147, 23);
-            this.txtBoxPhoneNumber.TabIndex = 0;
+            this.txtBoxPhoneNumber.TabIndex = 29;
             // 
             // lblLandline
             // 
@@ -447,7 +449,7 @@
             this.lblLandline.Location = new System.Drawing.Point(188, 365);
             this.lblLandline.Name = "lblLandline";
             this.lblLandline.Size = new System.Drawing.Size(53, 15);
-            this.lblLandline.TabIndex = 0;
+            this.lblLandline.TabIndex = 30;
             this.lblLandline.Text = "Landline";
             // 
             // txtBoxLandline
@@ -455,7 +457,7 @@
             this.txtBoxLandline.Location = new System.Drawing.Point(191, 383);
             this.txtBoxLandline.Name = "txtBoxLandline";
             this.txtBoxLandline.Size = new System.Drawing.Size(150, 23);
-            this.txtBoxLandline.TabIndex = 0;
+            this.txtBoxLandline.TabIndex = 30;
             // 
             // lblEmailAddress
             // 
@@ -466,7 +468,7 @@
             this.lblEmailAddress.Location = new System.Drawing.Point(358, 365);
             this.lblEmailAddress.Name = "lblEmailAddress";
             this.lblEmailAddress.Size = new System.Drawing.Size(84, 15);
-            this.lblEmailAddress.TabIndex = 0;
+            this.lblEmailAddress.TabIndex = 31;
             this.lblEmailAddress.Text = "Email Address";
             // 
             // txtBoxEmailAddress
@@ -474,7 +476,7 @@
             this.txtBoxEmailAddress.Location = new System.Drawing.Point(360, 383);
             this.txtBoxEmailAddress.Name = "txtBoxEmailAddress";
             this.txtBoxEmailAddress.Size = new System.Drawing.Size(207, 23);
-            this.txtBoxEmailAddress.TabIndex = 0;
+            this.txtBoxEmailAddress.TabIndex = 32;
             // 
             // lblHealthDeclaration
             // 
@@ -485,7 +487,7 @@
             this.lblHealthDeclaration.Location = new System.Drawing.Point(35, 427);
             this.lblHealthDeclaration.Name = "lblHealthDeclaration";
             this.lblHealthDeclaration.Size = new System.Drawing.Size(158, 19);
-            this.lblHealthDeclaration.TabIndex = 0;
+            this.lblHealthDeclaration.TabIndex = 33;
             this.lblHealthDeclaration.Text = "HEALTH DECLARATION";
             // 
             // pnlVaccination
@@ -499,7 +501,21 @@
             this.pnlVaccination.Location = new System.Drawing.Point(39, 451);
             this.pnlVaccination.Name = "pnlVaccination";
             this.pnlVaccination.Size = new System.Drawing.Size(180, 88);
-            this.pnlVaccination.TabIndex = 0;
+            this.pnlVaccination.TabIndex = 34;
+            // 
+            // rdBtnNotVaccinated
+            // 
+            this.rdBtnNotVaccinated.AutoSize = true;
+            this.rdBtnNotVaccinated.BackColor = System.Drawing.Color.Transparent;
+            this.rdBtnNotVaccinated.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBtnNotVaccinated.ForeColor = System.Drawing.Color.White;
+            this.rdBtnNotVaccinated.Location = new System.Drawing.Point(1, 60);
+            this.rdBtnNotVaccinated.Name = "rdBtnNotVaccinated";
+            this.rdBtnNotVaccinated.Size = new System.Drawing.Size(39, 19);
+            this.rdBtnNotVaccinated.TabIndex = 38;
+            this.rdBtnNotVaccinated.TabStop = true;
+            this.rdBtnNotVaccinated.Text = "No";
+            this.rdBtnNotVaccinated.UseVisualStyleBackColor = false;
             // 
             // rdBtnYesFullyVaccinated
             // 
@@ -510,7 +526,7 @@
             this.rdBtnYesFullyVaccinated.Location = new System.Drawing.Point(1, 38);
             this.rdBtnYesFullyVaccinated.Name = "rdBtnYesFullyVaccinated";
             this.rdBtnYesFullyVaccinated.Size = new System.Drawing.Size(123, 19);
-            this.rdBtnYesFullyVaccinated.TabIndex = 0;
+            this.rdBtnYesFullyVaccinated.TabIndex = 37;
             this.rdBtnYesFullyVaccinated.TabStop = true;
             this.rdBtnYesFullyVaccinated.Text = "Yes, fully vaccinated";
             this.rdBtnYesFullyVaccinated.UseVisualStyleBackColor = false;
@@ -524,7 +540,7 @@
             this.rdBtnYes1stOnly.Location = new System.Drawing.Point(1, 18);
             this.rdBtnYes1stOnly.Name = "rdBtnYes1stOnly";
             this.rdBtnYes1stOnly.Size = new System.Drawing.Size(111, 19);
-            this.rdBtnYes1stOnly.TabIndex = 0;
+            this.rdBtnYes1stOnly.TabIndex = 36;
             this.rdBtnYes1stOnly.TabStop = true;
             this.rdBtnYes1stOnly.Text = "Yes, 1st dose only";
             this.rdBtnYes1stOnly.UseVisualStyleBackColor = false;
@@ -538,12 +554,14 @@
             this.lblVaccinationQuestion.Location = new System.Drawing.Point(-2, 0);
             this.lblVaccinationQuestion.Name = "lblVaccinationQuestion";
             this.lblVaccinationQuestion.Size = new System.Drawing.Size(116, 15);
-            this.lblVaccinationQuestion.TabIndex = 0;
+            this.lblVaccinationQuestion.TabIndex = 35;
             this.lblVaccinationQuestion.Text = "Are you vaccinated?";
             // 
             // pnlSick
             // 
             this.pnlSick.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSick.Controls.Add(this.lblSickness);
+            this.pnlSick.Controls.Add(this.txtBoxSickness);
             this.pnlSick.Controls.Add(this.rdBtnNo);
             this.pnlSick.Controls.Add(this.rdBtnYes);
             this.pnlSick.Controls.Add(this.lblSickQuestion);
@@ -551,7 +569,27 @@
             this.pnlSick.Location = new System.Drawing.Point(261, 451);
             this.pnlSick.Name = "pnlSick";
             this.pnlSick.Size = new System.Drawing.Size(236, 88);
-            this.pnlSick.TabIndex = 72;
+            this.pnlSick.TabIndex = 39;
+            // 
+            // lblSickness
+            // 
+            this.lblSickness.AutoSize = true;
+            this.lblSickness.BackColor = System.Drawing.Color.Transparent;
+            this.lblSickness.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSickness.ForeColor = System.Drawing.Color.White;
+            this.lblSickness.Location = new System.Drawing.Point(3, 68);
+            this.lblSickness.Name = "lblSickness";
+            this.lblSickness.Size = new System.Drawing.Size(43, 14);
+            this.lblSickness.TabIndex = 44;
+            this.lblSickness.Text = "Sickness";
+            // 
+            // txtBoxSickness
+            // 
+            this.txtBoxSickness.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBoxSickness.Location = new System.Drawing.Point(3, 43);
+            this.txtBoxSickness.Name = "txtBoxSickness";
+            this.txtBoxSickness.Size = new System.Drawing.Size(160, 23);
+            this.txtBoxSickness.TabIndex = 43;
             // 
             // rdBtnNo
             // 
@@ -563,7 +601,7 @@
             this.rdBtnNo.Name = "rdBtnNo";
             this.rdBtnNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.rdBtnNo.Size = new System.Drawing.Size(39, 19);
-            this.rdBtnNo.TabIndex = 0;
+            this.rdBtnNo.TabIndex = 42;
             this.rdBtnNo.TabStop = true;
             this.rdBtnNo.Text = "No";
             this.rdBtnNo.UseVisualStyleBackColor = false;
@@ -578,7 +616,7 @@
             this.rdBtnYes.Name = "rdBtnYes";
             this.rdBtnYes.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.rdBtnYes.Size = new System.Drawing.Size(42, 19);
-            this.rdBtnYes.TabIndex = 0;
+            this.rdBtnYes.TabIndex = 41;
             this.rdBtnYes.TabStop = true;
             this.rdBtnYes.Text = "Yes";
             this.rdBtnYes.UseVisualStyleBackColor = false;
@@ -592,22 +630,8 @@
             this.lblSickQuestion.Location = new System.Drawing.Point(0, 0);
             this.lblSickQuestion.Name = "lblSickQuestion";
             this.lblSickQuestion.Size = new System.Drawing.Size(211, 15);
-            this.lblSickQuestion.TabIndex = 0;
+            this.lblSickQuestion.TabIndex = 40;
             this.lblSickQuestion.Text = "Have you been sick in the last 7 days?";
-            // 
-            // rdBtnNotVaccinated
-            // 
-            this.rdBtnNotVaccinated.AutoSize = true;
-            this.rdBtnNotVaccinated.BackColor = System.Drawing.Color.Transparent;
-            this.rdBtnNotVaccinated.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdBtnNotVaccinated.ForeColor = System.Drawing.Color.White;
-            this.rdBtnNotVaccinated.Location = new System.Drawing.Point(1, 60);
-            this.rdBtnNotVaccinated.Name = "rdBtnNotVaccinated";
-            this.rdBtnNotVaccinated.Size = new System.Drawing.Size(39, 19);
-            this.rdBtnNotVaccinated.TabIndex = 0;
-            this.rdBtnNotVaccinated.TabStop = true;
-            this.rdBtnNotVaccinated.Text = "No";
-            this.rdBtnNotVaccinated.UseVisualStyleBackColor = false;
             // 
             // Start
             // 
@@ -716,5 +740,7 @@
         private Label lblSickQuestion;
         private RadioButton rdBtnNo;
         private RadioButton rdBtnNotVaccinated;
+        private Label lblSickness;
+        private TextBox txtBoxSickness;
     }
 }
