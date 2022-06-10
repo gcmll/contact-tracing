@@ -53,6 +53,10 @@ namespace chimmyContactTracing
                 {
                     profileInformation.Write("Are you vaccinated?: Yes, fully vaccinated");
                 }
+                else if (rdBtnNo.Checked)
+                {
+                    profileInformation.Write("Are you vaccinated?: No");
+                }
 
                 profileInformation.Close();
             }
