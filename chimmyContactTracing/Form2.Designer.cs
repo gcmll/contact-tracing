@@ -38,6 +38,8 @@
             this.txtBoxLastName = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.txtBoxFirstName = new System.Windows.Forms.TextBox();
+            this.lblMiddleName = new System.Windows.Forms.Label();
+            this.txtBoxMiddleName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSave
@@ -139,7 +141,27 @@
             this.txtBoxFirstName.Location = new System.Drawing.Point(191, 165);
             this.txtBoxFirstName.Name = "txtBoxFirstName";
             this.txtBoxFirstName.Size = new System.Drawing.Size(150, 23);
-            this.txtBoxFirstName.TabIndex = 23;
+            this.txtBoxFirstName.TabIndex = 0;
+            // 
+            // lblMiddleName
+            // 
+            this.lblMiddleName.AutoSize = true;
+            this.lblMiddleName.BackColor = System.Drawing.Color.Transparent;
+            this.lblMiddleName.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMiddleName.ForeColor = System.Drawing.Color.White;
+            this.lblMiddleName.Location = new System.Drawing.Point(347, 189);
+            this.lblMiddleName.Name = "lblMiddleName";
+            this.lblMiddleName.Size = new System.Drawing.Size(67, 14);
+            this.lblMiddleName.TabIndex = 0;
+            this.lblMiddleName.Text = "Middle Name";
+            // 
+            // txtBoxMiddleName
+            // 
+            this.txtBoxMiddleName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBoxMiddleName.Location = new System.Drawing.Point(347, 165);
+            this.txtBoxMiddleName.Name = "txtBoxMiddleName";
+            this.txtBoxMiddleName.Size = new System.Drawing.Size(150, 23);
+            this.txtBoxMiddleName.TabIndex = 2;
             // 
             // Start
             // 
@@ -147,6 +169,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.lblMiddleName);
+            this.Controls.Add(this.txtBoxMiddleName);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.txtBoxFirstName);
             this.Controls.Add(this.lblLastName);
@@ -178,5 +202,7 @@
         private TextBox txtBoxLastName;
         private Label lblFirstName;
         private TextBox txtBoxFirstName;
+        private Label lblMiddleName;
+        private TextBox txtBoxMiddleName;
     }
 }
