@@ -96,5 +96,35 @@ namespace chimmyContactTracing
                 MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Start_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                DialogResult exitConfirmation = MessageBox.Show("Are you sure you want to continue?", "Please Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                try
+                {
+                    if (exitConfirmation == DialogResult.Yes)
+                    {
+                        e.Cancel = false;
+                    }
+                    else if (exitConfirmation == DialogResult.No)
+                    {
+                        e.Cancel = true;
+                    }
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

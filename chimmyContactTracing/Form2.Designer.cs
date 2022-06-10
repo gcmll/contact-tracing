@@ -681,6 +681,7 @@
             this.Name = "Start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chimmy - Contact Tracing";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_FormClosing);
             this.pnlSex.ResumeLayout(false);
             this.pnlSex.PerformLayout();
             this.pnlVaccination.ResumeLayout(false);
