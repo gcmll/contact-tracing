@@ -65,7 +65,12 @@
             this.txtBoxLandline = new System.Windows.Forms.TextBox();
             this.lblEmailAddress = new System.Windows.Forms.Label();
             this.txtBoxEmailAddress = new System.Windows.Forms.TextBox();
+            this.lblHealthDeclaration = new System.Windows.Forms.Label();
+            this.pnlVaccination = new System.Windows.Forms.Panel();
+            this.rdBtnYes1stOnly = new System.Windows.Forms.RadioButton();
+            this.lblVaccinationQuestion = new System.Windows.Forms.Label();
             this.pnlSex.SuspendLayout();
+            this.pnlVaccination.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSave
@@ -464,12 +469,63 @@
             this.txtBoxEmailAddress.Size = new System.Drawing.Size(207, 23);
             this.txtBoxEmailAddress.TabIndex = 0;
             // 
+            // lblHealthDeclaration
+            // 
+            this.lblHealthDeclaration.AutoSize = true;
+            this.lblHealthDeclaration.BackColor = System.Drawing.Color.Transparent;
+            this.lblHealthDeclaration.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblHealthDeclaration.ForeColor = System.Drawing.Color.White;
+            this.lblHealthDeclaration.Location = new System.Drawing.Point(35, 427);
+            this.lblHealthDeclaration.Name = "lblHealthDeclaration";
+            this.lblHealthDeclaration.Size = new System.Drawing.Size(158, 19);
+            this.lblHealthDeclaration.TabIndex = 0;
+            this.lblHealthDeclaration.Text = "HEALTH DECLARATION";
+            // 
+            // pnlVaccination
+            // 
+            this.pnlVaccination.BackColor = System.Drawing.Color.Transparent;
+            this.pnlVaccination.Controls.Add(this.rdBtnYes1stOnly);
+            this.pnlVaccination.Controls.Add(this.lblVaccinationQuestion);
+            this.pnlVaccination.ForeColor = System.Drawing.Color.Transparent;
+            this.pnlVaccination.Location = new System.Drawing.Point(39, 451);
+            this.pnlVaccination.Name = "pnlVaccination";
+            this.pnlVaccination.Size = new System.Drawing.Size(180, 88);
+            this.pnlVaccination.TabIndex = 0;
+            // 
+            // rdBtnYes1stOnly
+            // 
+            this.rdBtnYes1stOnly.AutoSize = true;
+            this.rdBtnYes1stOnly.BackColor = System.Drawing.Color.Transparent;
+            this.rdBtnYes1stOnly.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBtnYes1stOnly.ForeColor = System.Drawing.Color.White;
+            this.rdBtnYes1stOnly.Location = new System.Drawing.Point(1, 18);
+            this.rdBtnYes1stOnly.Name = "rdBtnYes1stOnly";
+            this.rdBtnYes1stOnly.Size = new System.Drawing.Size(111, 19);
+            this.rdBtnYes1stOnly.TabIndex = 0;
+            this.rdBtnYes1stOnly.TabStop = true;
+            this.rdBtnYes1stOnly.Text = "Yes, 1st dose only";
+            this.rdBtnYes1stOnly.UseVisualStyleBackColor = false;
+            // 
+            // lblVaccinationQuestion
+            // 
+            this.lblVaccinationQuestion.AutoSize = true;
+            this.lblVaccinationQuestion.BackColor = System.Drawing.Color.Transparent;
+            this.lblVaccinationQuestion.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblVaccinationQuestion.ForeColor = System.Drawing.Color.White;
+            this.lblVaccinationQuestion.Location = new System.Drawing.Point(-2, 0);
+            this.lblVaccinationQuestion.Name = "lblVaccinationQuestion";
+            this.lblVaccinationQuestion.Size = new System.Drawing.Size(116, 15);
+            this.lblVaccinationQuestion.TabIndex = 0;
+            this.lblVaccinationQuestion.Text = "Are you vaccinated?";
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.pnlVaccination);
+            this.Controls.Add(this.lblHealthDeclaration);
             this.Controls.Add(this.lblEmailAddress);
             this.Controls.Add(this.txtBoxEmailAddress);
             this.Controls.Add(this.lblLandline);
@@ -511,6 +567,8 @@
             this.Text = "Chimmy - Contact Tracing";
             this.pnlSex.ResumeLayout(false);
             this.pnlSex.PerformLayout();
+            this.pnlVaccination.ResumeLayout(false);
+            this.pnlVaccination.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -554,5 +612,9 @@
         private TextBox txtBoxLandline;
         private Label lblEmailAddress;
         private TextBox txtBoxEmailAddress;
+        private Label lblHealthDeclaration;
+        private Panel pnlVaccination;
+        private RadioButton rdBtnYes1stOnly;
+        private Label lblVaccinationQuestion;
     }
 }

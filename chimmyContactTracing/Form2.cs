@@ -44,6 +44,12 @@ namespace chimmyContactTracing
                 profileInformation.WriteLine("Phone Number: " + txtBoxPhoneNumber.Text);
                 profileInformation.WriteLine("Landline: " + txtBoxLandline.Text);
                 profileInformation.WriteLine("Email Address: " + txtBoxEmailAddress.Text);
+
+                if (rdBtnYes1stOnly.Checked)
+                {
+                    profileInformation.WriteLine("Are you vacinatted?: Yes, 1st dose only");
+                }
+
                 profileInformation.Close();
             }
             catch (Exception)
