@@ -26,6 +26,12 @@ namespace chimmyContactTracing
 
                 profileInformation.WriteLine("Date and Time: " + dtpDateTime.Text);
                 profileInformation.WriteLine("Full Name: " + txtBoxLastName.Text + " " + txtBoxSuffix.Text + ", " + txtBoxFirstName.Text + ", " + txtBoxMiddleName.Text);
+
+                if (rdBtnMale.Checked)
+                {
+                    profileInformation.WriteLine("Sex: Male");
+                }
+
                 profileInformation.Close();
             }
             catch (Exception)

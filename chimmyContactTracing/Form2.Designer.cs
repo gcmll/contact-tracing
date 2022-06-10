@@ -42,6 +42,13 @@
             this.txtBoxMiddleName = new System.Windows.Forms.TextBox();
             this.lblSuffix = new System.Windows.Forms.Label();
             this.txtBoxSuffix = new System.Windows.Forms.TextBox();
+            this.pnlSex = new System.Windows.Forms.Panel();
+            this.rdBtnMale = new System.Windows.Forms.RadioButton();
+            this.lblSex = new System.Windows.Forms.Label();
+            this.rdButton2 = new System.Windows.Forms.RadioButton();
+            this.rdButton1 = new System.Windows.Forms.RadioButton();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pnlSex.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSave
@@ -185,12 +192,93 @@
             this.txtBoxSuffix.Size = new System.Drawing.Size(64, 23);
             this.txtBoxSuffix.TabIndex = 0;
             // 
+            // pnlSex
+            // 
+            this.pnlSex.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSex.Controls.Add(this.rdBtnMale);
+            this.pnlSex.Controls.Add(this.lblSex);
+            this.pnlSex.ForeColor = System.Drawing.Color.Transparent;
+            this.pnlSex.Location = new System.Drawing.Point(38, 218);
+            this.pnlSex.Name = "pnlSex";
+            this.pnlSex.Size = new System.Drawing.Size(127, 44);
+            this.pnlSex.TabIndex = 0;
+            // 
+            // rdBtnMale
+            // 
+            this.rdBtnMale.AutoSize = true;
+            this.rdBtnMale.BackColor = System.Drawing.Color.Transparent;
+            this.rdBtnMale.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBtnMale.ForeColor = System.Drawing.Color.White;
+            this.rdBtnMale.Location = new System.Drawing.Point(1, 18);
+            this.rdBtnMale.Name = "rdBtnMale";
+            this.rdBtnMale.Size = new System.Drawing.Size(49, 19);
+            this.rdBtnMale.TabIndex = 0;
+            this.rdBtnMale.TabStop = true;
+            this.rdBtnMale.Text = "Male";
+            this.rdBtnMale.UseVisualStyleBackColor = false;
+            // 
+            // lblSex
+            // 
+            this.lblSex.AutoSize = true;
+            this.lblSex.BackColor = System.Drawing.Color.Transparent;
+            this.lblSex.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSex.ForeColor = System.Drawing.Color.White;
+            this.lblSex.Location = new System.Drawing.Point(-2, 0);
+            this.lblSex.Name = "lblSex";
+            this.lblSex.Size = new System.Drawing.Size(26, 15);
+            this.lblSex.TabIndex = 0;
+            this.lblSex.Text = "Sex";
+            // 
+            // rdButton2
+            // 
+            this.rdButton2.AutoSize = true;
+            this.rdButton2.BackColor = System.Drawing.Color.Transparent;
+            this.rdButton2.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdButton2.ForeColor = System.Drawing.Color.White;
+            this.rdButton2.Location = new System.Drawing.Point(38, 218);
+            this.rdButton2.Name = "rdButton2";
+            this.rdButton2.Size = new System.Drawing.Size(59, 19);
+            this.rdButton2.TabIndex = 64;
+            this.rdButton2.TabStop = true;
+            this.rdButton2.Text = "Female";
+            this.rdButton2.UseVisualStyleBackColor = false;
+            // 
+            // rdButton1
+            // 
+            this.rdButton1.AutoSize = true;
+            this.rdButton1.BackColor = System.Drawing.Color.Transparent;
+            this.rdButton1.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdButton1.ForeColor = System.Drawing.Color.White;
+            this.rdButton1.Location = new System.Drawing.Point(38, 218);
+            this.rdButton1.Name = "rdButton1";
+            this.rdButton1.Size = new System.Drawing.Size(49, 19);
+            this.rdButton1.TabIndex = 63;
+            this.rdButton1.TabStop = true;
+            this.rdButton1.Text = "Male";
+            this.rdButton1.UseVisualStyleBackColor = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(38, 218);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(26, 15);
+            this.label14.TabIndex = 62;
+            this.label14.Text = "Sex";
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.pnlSex);
+            this.Controls.Add(this.rdButton2);
+            this.Controls.Add(this.rdButton1);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.lblSuffix);
             this.Controls.Add(this.txtBoxSuffix);
             this.Controls.Add(this.lblMiddleName);
@@ -210,6 +298,8 @@
             this.Name = "Start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chimmy - Contact Tracing";
+            this.pnlSex.ResumeLayout(false);
+            this.pnlSex.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +320,11 @@
         private TextBox txtBoxMiddleName;
         private Label lblSuffix;
         private TextBox txtBoxSuffix;
+        private Panel pnlSex;
+        private RadioButton rdBtnMale;
+        private Label lblSex;
+        private RadioButton rdButton2;
+        private RadioButton rdButton1;
+        private Label label14;
     }
 }
