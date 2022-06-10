@@ -51,6 +51,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
             this.lblBirthDate = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.txtBoxAge = new System.Windows.Forms.TextBox();
             this.pnlSex.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -312,12 +314,33 @@
             this.lblBirthDate.TabIndex = 0;
             this.lblBirthDate.Text = "Date of Birth";
             // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.BackColor = System.Drawing.Color.Transparent;
+            this.lblAge.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAge.ForeColor = System.Drawing.Color.White;
+            this.lblAge.Location = new System.Drawing.Point(321, 218);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(29, 15);
+            this.lblAge.TabIndex = 0;
+            this.lblAge.Text = "Age";
+            // 
+            // txtBoxAge
+            // 
+            this.txtBoxAge.Location = new System.Drawing.Point(323, 235);
+            this.txtBoxAge.Name = "txtBoxAge";
+            this.txtBoxAge.Size = new System.Drawing.Size(40, 23);
+            this.txtBoxAge.TabIndex = 0;
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.txtBoxAge);
             this.Controls.Add(this.dtpBirthDate);
             this.Controls.Add(this.lblBirthDate);
             this.Controls.Add(this.pnlSex);
@@ -374,5 +397,7 @@
         private RadioButton rdBtnFemale;
         private DateTimePicker dtpBirthDate;
         private Label lblBirthDate;
+        private Label lblAge;
+        private TextBox txtBoxAge;
     }
 }

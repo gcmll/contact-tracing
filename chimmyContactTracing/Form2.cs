@@ -34,9 +34,11 @@ namespace chimmyContactTracing
                 else if (rdBtnFemale.Checked)
                 {
                     profileInformation.WriteLine("Sex: Female");
+
                 }
 
                 profileInformation.WriteLine("Date of Birth: " + dtpBirthDate.Text);
+                profileInformation.WriteLine("Age: " + txtBoxAge.Text);
                 profileInformation.Close();
             }
             catch (Exception)
