@@ -55,6 +55,10 @@
             this.txtBoxAge = new System.Windows.Forms.TextBox();
             this.txtBoxNationality = new System.Windows.Forms.TextBox();
             this.lblNationality = new System.Windows.Forms.Label();
+            this.lblContactInfo = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtBoxAddress = new System.Windows.Forms.TextBox();
+            this.lblExactAddress = new System.Windows.Forms.Label();
             this.pnlSex.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -354,12 +358,59 @@
             this.lblNationality.TabIndex = 0;
             this.lblNationality.Text = "Nationality";
             // 
+            // lblContactInfo
+            // 
+            this.lblContactInfo.AutoSize = true;
+            this.lblContactInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblContactInfo.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblContactInfo.ForeColor = System.Drawing.Color.White;
+            this.lblContactInfo.Location = new System.Drawing.Point(34, 275);
+            this.lblContactInfo.Name = "lblContactInfo";
+            this.lblContactInfo.Size = new System.Drawing.Size(178, 19);
+            this.lblContactInfo.TabIndex = 0;
+            this.lblContactInfo.Text = "CONTACT INFORMATION";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddress.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAddress.ForeColor = System.Drawing.Color.White;
+            this.lblAddress.Location = new System.Drawing.Point(35, 298);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(52, 15);
+            this.lblAddress.TabIndex = 0;
+            this.lblAddress.Text = "Address";
+            // 
+            // txtBoxAddress
+            // 
+            this.txtBoxAddress.Location = new System.Drawing.Point(38, 316);
+            this.txtBoxAddress.Name = "txtBoxAddress";
+            this.txtBoxAddress.Size = new System.Drawing.Size(529, 23);
+            this.txtBoxAddress.TabIndex = 0;
+            // 
+            // lblExactAddress
+            // 
+            this.lblExactAddress.AutoSize = true;
+            this.lblExactAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblExactAddress.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblExactAddress.ForeColor = System.Drawing.Color.White;
+            this.lblExactAddress.Location = new System.Drawing.Point(38, 340);
+            this.lblExactAddress.Name = "lblExactAddress";
+            this.lblExactAddress.Size = new System.Drawing.Size(260, 14);
+            this.lblExactAddress.TabIndex = 0;
+            this.lblExactAddress.Text = "House No., Street/Block, Barangay, Town/City, Provicne";
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.lblExactAddress);
+            this.Controls.Add(this.txtBoxAddress);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.lblContactInfo);
             this.Controls.Add(this.txtBoxNationality);
             this.Controls.Add(this.lblNationality);
             this.Controls.Add(this.lblAge);
@@ -424,5 +475,9 @@
         private TextBox txtBoxAge;
         private TextBox txtBoxNationality;
         private Label lblNationality;
+        private Label lblContactInfo;
+        private Label lblAddress;
+        private TextBox txtBoxAddress;
+        private Label lblExactAddress;
     }
 }

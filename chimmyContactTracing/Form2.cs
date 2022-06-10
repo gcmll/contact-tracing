@@ -40,6 +40,7 @@ namespace chimmyContactTracing
                 profileInformation.WriteLine("Date of Birth: " + dtpBirthDate.Text);
                 profileInformation.WriteLine("Age: " + txtBoxAge.Text);
                 profileInformation.WriteLine("Nationality: " + txtBoxNationality.Text);
+                profileInformation.WriteLine("Address: " + txtBoxAddress.Text);
                 profileInformation.Close();
             }
             catch (Exception)
