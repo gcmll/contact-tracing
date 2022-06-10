@@ -1,13 +1,4 @@
-Date and Time:    06/10/2022 11:39 PM
-Full Name:  , , 
-Date of Birth:  12/31/2021
-Age: 
-Nationality: 
-Address: 
-Phone Number: 
-Landline: 
-Email Address: 
-Are you vaccinated?: Yes, fully vaccinatedDate and Time:    06/10/2022 11:42 PM
+Date and Time:    06/10/2022 11:56 PM
 Full Name:  , , 
 Date of Birth:  12/31/2021
 Age: 
@@ -17,3 +8,4 @@ Phone Number:
 Landline: 
 Email Address: 
 Are you vaccinated?: No
+Have you been sick in the last 7 days?: Yes
