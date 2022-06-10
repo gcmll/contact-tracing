@@ -40,6 +40,8 @@
             this.txtBoxFirstName = new System.Windows.Forms.TextBox();
             this.lblMiddleName = new System.Windows.Forms.Label();
             this.txtBoxMiddleName = new System.Windows.Forms.TextBox();
+            this.lblSuffix = new System.Windows.Forms.Label();
+            this.txtBoxSuffix = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSave
@@ -161,7 +163,27 @@
             this.txtBoxMiddleName.Location = new System.Drawing.Point(347, 165);
             this.txtBoxMiddleName.Name = "txtBoxMiddleName";
             this.txtBoxMiddleName.Size = new System.Drawing.Size(150, 23);
-            this.txtBoxMiddleName.TabIndex = 2;
+            this.txtBoxMiddleName.TabIndex = 0;
+            // 
+            // lblSuffix
+            // 
+            this.lblSuffix.AutoSize = true;
+            this.lblSuffix.BackColor = System.Drawing.Color.Transparent;
+            this.lblSuffix.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSuffix.ForeColor = System.Drawing.Color.White;
+            this.lblSuffix.Location = new System.Drawing.Point(503, 191);
+            this.lblSuffix.Name = "lblSuffix";
+            this.lblSuffix.Size = new System.Drawing.Size(34, 14);
+            this.lblSuffix.TabIndex = 0;
+            this.lblSuffix.Text = "Suffix";
+            // 
+            // txtBoxSuffix
+            // 
+            this.txtBoxSuffix.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBoxSuffix.Location = new System.Drawing.Point(503, 165);
+            this.txtBoxSuffix.Name = "txtBoxSuffix";
+            this.txtBoxSuffix.Size = new System.Drawing.Size(64, 23);
+            this.txtBoxSuffix.TabIndex = 0;
             // 
             // Start
             // 
@@ -169,6 +191,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.lblSuffix);
+            this.Controls.Add(this.txtBoxSuffix);
             this.Controls.Add(this.lblMiddleName);
             this.Controls.Add(this.txtBoxMiddleName);
             this.Controls.Add(this.lblFirstName);
@@ -204,5 +228,7 @@
         private TextBox txtBoxFirstName;
         private Label lblMiddleName;
         private TextBox txtBoxMiddleName;
+        private Label lblSuffix;
+        private TextBox txtBoxSuffix;
     }
 }
