@@ -31,6 +31,10 @@ namespace chimmyContactTracing
                 {
                     profileInformation.WriteLine("Sex: Male");
                 }
+                else if (rdBtnFemale.Checked)
+                {
+                    profileInformation.WriteLine("Sex: Female");
+                }
 
                 profileInformation.Close();
             }
