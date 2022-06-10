@@ -30,9 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
             this.btnSave = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.dtpDateTime1 = new System.Windows.Forms.DateTimePicker();
+            this.lblDateTime = new System.Windows.Forms.Label();
+            this.dtpDateTime = new System.Windows.Forms.DateTimePicker();
+            this.lblPersonalInfo = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.txtBoxLastName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSave
@@ -48,42 +51,73 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // label12
+            // lblDateTime
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(31, 95);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(284, 14);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "*If an information is not available, kindly leave the field blank.";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDateTime.AutoSize = true;
+            this.lblDateTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblDateTime.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDateTime.ForeColor = System.Drawing.Color.White;
+            this.lblDateTime.Location = new System.Drawing.Point(358, 77);
+            this.lblDateTime.Name = "lblDateTime";
+            this.lblDateTime.Size = new System.Drawing.Size(83, 15);
+            this.lblDateTime.TabIndex = 0;
+            this.lblDateTime.Text = "Date and Time";
             // 
-            // label16
+            // dtpDateTime
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(358, 77);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(83, 15);
-            this.label16.TabIndex = 64;
-            this.label16.Text = "Date and Time";
+            this.dtpDateTime.Checked = false;
+            this.dtpDateTime.CustomFormat = "   MM/dd/yyyy hh:mm tt";
+            this.dtpDateTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDateTime.Location = new System.Drawing.Point(360, 95);
+            this.dtpDateTime.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
+            this.dtpDateTime.MinDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
+            this.dtpDateTime.Name = "dtpDateTime";
+            this.dtpDateTime.Size = new System.Drawing.Size(207, 23);
+            this.dtpDateTime.TabIndex = 0;
             // 
-            // dtpDateTime1
+            // lblPersonalInfo
             // 
-            this.dtpDateTime1.Checked = false;
-            this.dtpDateTime1.CustomFormat = "   MM/dd/yyyy hh:mm tt";
-            this.dtpDateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateTime1.Location = new System.Drawing.Point(360, 95);
-            this.dtpDateTime1.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
-            this.dtpDateTime1.MinDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
-            this.dtpDateTime1.Name = "dtpDateTime1";
-            this.dtpDateTime1.Size = new System.Drawing.Size(207, 23);
-            this.dtpDateTime1.TabIndex = 63;
+            this.lblPersonalInfo.AutoSize = true;
+            this.lblPersonalInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblPersonalInfo.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPersonalInfo.ForeColor = System.Drawing.Color.White;
+            this.lblPersonalInfo.Location = new System.Drawing.Point(31, 124);
+            this.lblPersonalInfo.Name = "lblPersonalInfo";
+            this.lblPersonalInfo.Size = new System.Drawing.Size(181, 19);
+            this.lblPersonalInfo.TabIndex = 0;
+            this.lblPersonalInfo.Text = "PERSONAL INFORMATION";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(32, 147);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(39, 15);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name";
+            // 
+            // lblLastName
+            // 
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.BackColor = System.Drawing.Color.Transparent;
+            this.lblLastName.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLastName.ForeColor = System.Drawing.Color.White;
+            this.lblLastName.Location = new System.Drawing.Point(35, 189);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(54, 14);
+            this.lblLastName.TabIndex = 22;
+            this.lblLastName.Text = "Last Name";
+            // 
+            // txtBoxLastName
+            // 
+            this.txtBoxLastName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBoxLastName.Location = new System.Drawing.Point(35, 165);
+            this.txtBoxLastName.Name = "txtBoxLastName";
+            this.txtBoxLastName.Size = new System.Drawing.Size(150, 23);
+            this.txtBoxLastName.TabIndex = 0;
             // 
             // Start
             // 
@@ -91,9 +125,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.dtpDateTime1);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lblLastName);
+            this.Controls.Add(this.txtBoxLastName);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.lblPersonalInfo);
+            this.Controls.Add(this.lblDateTime);
+            this.Controls.Add(this.dtpDateTime);
             this.Controls.Add(this.btnSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -109,8 +146,11 @@
         #endregion
 
         private Button btnSave;
-        private Label label12;
-        public Label label16;
-        private DateTimePicker dtpDateTime1;
+        public Label lblDateTime;
+        private DateTimePicker dtpDateTime;
+        private Label lblPersonalInfo;
+        private Label lblName;
+        private Label lblLastName;
+        private TextBox txtBoxLastName;
     }
 }

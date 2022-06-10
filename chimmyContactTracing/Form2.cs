@@ -24,7 +24,8 @@ namespace chimmyContactTracing
             {
                 StreamWriter profileInformation = new StreamWriter(@"C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\Chimmy-ContactTracing-Information.txt", true);
 
-                profileInformation.WriteLine("Date and Time: " + dtpDateTime1.Text);
+                profileInformation.WriteLine("Date and Time: " + dtpDateTime.Text);
+                profileInformation.WriteLine("Full Name: " + txtBoxLastName.Text);
                 profileInformation.Close();
             }
             catch (Exception)
