@@ -36,6 +36,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.txtBoxLastName = new System.Windows.Forms.TextBox();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.txtBoxFirstName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSave
@@ -46,7 +48,7 @@
             this.btnSave.Location = new System.Drawing.Point(449, 545);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(118, 31);
-            this.btnSave.TabIndex = 2;
+            this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -108,7 +110,7 @@
             this.lblLastName.Location = new System.Drawing.Point(35, 189);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(54, 14);
-            this.lblLastName.TabIndex = 22;
+            this.lblLastName.TabIndex = 0;
             this.lblLastName.Text = "Last Name";
             // 
             // txtBoxLastName
@@ -119,12 +121,34 @@
             this.txtBoxLastName.Size = new System.Drawing.Size(150, 23);
             this.txtBoxLastName.TabIndex = 0;
             // 
+            // lblFirstName
+            // 
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
+            this.lblFirstName.Font = new System.Drawing.Font("Tw Cen MT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFirstName.ForeColor = System.Drawing.Color.White;
+            this.lblFirstName.Location = new System.Drawing.Point(191, 189);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(55, 14);
+            this.lblFirstName.TabIndex = 0;
+            this.lblFirstName.Text = "First Name";
+            // 
+            // txtBoxFirstName
+            // 
+            this.txtBoxFirstName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBoxFirstName.Location = new System.Drawing.Point(191, 165);
+            this.txtBoxFirstName.Name = "txtBoxFirstName";
+            this.txtBoxFirstName.Size = new System.Drawing.Size(150, 23);
+            this.txtBoxFirstName.TabIndex = 23;
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.lblFirstName);
+            this.Controls.Add(this.txtBoxFirstName);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.txtBoxLastName);
             this.Controls.Add(this.lblName);
@@ -152,5 +176,7 @@
         private Label lblName;
         private Label lblLastName;
         private TextBox txtBoxLastName;
+        private Label lblFirstName;
+        private TextBox txtBoxFirstName;
     }
 }
