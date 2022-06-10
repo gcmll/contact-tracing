@@ -1,4 +1,4 @@
-Date and Time:    06/10/2022 11:30 PM
+Date and Time:    06/10/2022 11:39 PM
 Full Name:  , , 
 Date of Birth:  12/31/2021
 Age: 
@@ -7,4 +7,4 @@ Address:
 Phone Number: 
 Landline: 
 Email Address: 
-Are you vacinatted?: Yes, 1st dose only
+Are you vaccinated?: Yes, fully vaccinated

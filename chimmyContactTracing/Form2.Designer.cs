@@ -69,6 +69,7 @@
             this.pnlVaccination = new System.Windows.Forms.Panel();
             this.rdBtnYes1stOnly = new System.Windows.Forms.RadioButton();
             this.lblVaccinationQuestion = new System.Windows.Forms.Label();
+            this.rdBtnYesFullyVaccinated = new System.Windows.Forms.RadioButton();
             this.pnlSex.SuspendLayout();
             this.pnlVaccination.SuspendLayout();
             this.SuspendLayout();
@@ -484,6 +485,7 @@
             // pnlVaccination
             // 
             this.pnlVaccination.BackColor = System.Drawing.Color.Transparent;
+            this.pnlVaccination.Controls.Add(this.rdBtnYesFullyVaccinated);
             this.pnlVaccination.Controls.Add(this.rdBtnYes1stOnly);
             this.pnlVaccination.Controls.Add(this.lblVaccinationQuestion);
             this.pnlVaccination.ForeColor = System.Drawing.Color.Transparent;
@@ -517,6 +519,20 @@
             this.lblVaccinationQuestion.Size = new System.Drawing.Size(116, 15);
             this.lblVaccinationQuestion.TabIndex = 0;
             this.lblVaccinationQuestion.Text = "Are you vaccinated?";
+            // 
+            // rdBtnYesFullyVaccinated
+            // 
+            this.rdBtnYesFullyVaccinated.AutoSize = true;
+            this.rdBtnYesFullyVaccinated.BackColor = System.Drawing.Color.Transparent;
+            this.rdBtnYesFullyVaccinated.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdBtnYesFullyVaccinated.ForeColor = System.Drawing.Color.White;
+            this.rdBtnYesFullyVaccinated.Location = new System.Drawing.Point(1, 38);
+            this.rdBtnYesFullyVaccinated.Name = "rdBtnYesFullyVaccinated";
+            this.rdBtnYesFullyVaccinated.Size = new System.Drawing.Size(123, 19);
+            this.rdBtnYesFullyVaccinated.TabIndex = 0;
+            this.rdBtnYesFullyVaccinated.TabStop = true;
+            this.rdBtnYesFullyVaccinated.Text = "Yes, fully vaccinated";
+            this.rdBtnYesFullyVaccinated.UseVisualStyleBackColor = false;
             // 
             // Start
             // 
@@ -616,5 +632,6 @@
         private Panel pnlVaccination;
         private RadioButton rdBtnYes1stOnly;
         private Label lblVaccinationQuestion;
+        private RadioButton rdBtnYesFullyVaccinated;
     }
 }

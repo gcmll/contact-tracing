@@ -47,7 +47,11 @@ namespace chimmyContactTracing
 
                 if (rdBtnYes1stOnly.Checked)
                 {
-                    profileInformation.WriteLine("Are you vacinatted?: Yes, 1st dose only");
+                    profileInformation.WriteLine("Are you vaccinated?: Yes, 1st dose only");
+                }
+                else if (rdBtnYesFullyVaccinated.Checked)
+                {
+                    profileInformation.Write("Are you vaccinated?: Yes, fully vaccinated");
                 }
 
                 profileInformation.Close();
