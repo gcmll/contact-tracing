@@ -59,6 +59,8 @@
             this.lblAddress = new System.Windows.Forms.Label();
             this.txtBoxAddress = new System.Windows.Forms.TextBox();
             this.lblExactAddress = new System.Windows.Forms.Label();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.txtBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.pnlSex.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -401,12 +403,33 @@
             this.lblExactAddress.TabIndex = 0;
             this.lblExactAddress.Text = "House No., Street/Block, Barangay, Town/City, Provicne";
             // 
+            // lblPhoneNumber
+            // 
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lblPhoneNumber.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPhoneNumber.ForeColor = System.Drawing.Color.White;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(35, 365);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(87, 15);
+            this.lblPhoneNumber.TabIndex = 0;
+            this.lblPhoneNumber.Text = "Phone Number";
+            // 
+            // txtBoxPhoneNumber
+            // 
+            this.txtBoxPhoneNumber.Location = new System.Drawing.Point(38, 383);
+            this.txtBoxPhoneNumber.Name = "txtBoxPhoneNumber";
+            this.txtBoxPhoneNumber.Size = new System.Drawing.Size(147, 23);
+            this.txtBoxPhoneNumber.TabIndex = 0;
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.lblPhoneNumber);
+            this.Controls.Add(this.txtBoxPhoneNumber);
             this.Controls.Add(this.lblExactAddress);
             this.Controls.Add(this.txtBoxAddress);
             this.Controls.Add(this.lblAddress);
@@ -479,5 +502,7 @@
         private Label lblAddress;
         private TextBox txtBoxAddress;
         private Label lblExactAddress;
+        private Label lblPhoneNumber;
+        private TextBox txtBoxPhoneNumber;
     }
 }

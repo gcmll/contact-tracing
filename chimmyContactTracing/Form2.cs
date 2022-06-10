@@ -41,6 +41,7 @@ namespace chimmyContactTracing
                 profileInformation.WriteLine("Age: " + txtBoxAge.Text);
                 profileInformation.WriteLine("Nationality: " + txtBoxNationality.Text);
                 profileInformation.WriteLine("Address: " + txtBoxAddress.Text);
+                profileInformation.WriteLine("Phone Number: " + txtBoxPhoneNumber.Text);
                 profileInformation.Close();
             }
             catch (Exception)
