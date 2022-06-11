@@ -77,6 +77,7 @@
             this.rdBtnNo = new System.Windows.Forms.RadioButton();
             this.rdBtnYes = new System.Windows.Forms.RadioButton();
             this.lblSickQuestion = new System.Windows.Forms.Label();
+            this.lblDirection = new System.Windows.Forms.Label();
             this.pnlSex.SuspendLayout();
             this.pnlVaccination.SuspendLayout();
             this.pnlSick.SuspendLayout();
@@ -633,12 +634,25 @@
             this.lblSickQuestion.TabIndex = 40;
             this.lblSickQuestion.Text = "Have you been sick in the last 7 days?";
             // 
+            // lblDirection
+            // 
+            this.lblDirection.AutoSize = true;
+            this.lblDirection.BackColor = System.Drawing.Color.Transparent;
+            this.lblDirection.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDirection.ForeColor = System.Drawing.Color.White;
+            this.lblDirection.Location = new System.Drawing.Point(34, 95);
+            this.lblDirection.Name = "lblDirection";
+            this.lblDirection.Size = new System.Drawing.Size(272, 15);
+            this.lblDirection.TabIndex = 45;
+            this.lblDirection.Text = "*If the information is not available, kindly leave it blank.";
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.lblDirection);
             this.Controls.Add(this.pnlSick);
             this.Controls.Add(this.pnlVaccination);
             this.Controls.Add(this.lblHealthDeclaration);
@@ -743,5 +757,6 @@
         private RadioButton rdBtnNotVaccinated;
         private Label lblSickness;
         private TextBox txtBoxSickness;
+        private Label lblDirection;
     }
 }

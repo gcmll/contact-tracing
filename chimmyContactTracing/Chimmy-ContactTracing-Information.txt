@@ -1,28 +1,14 @@
-Date and Time:    06/11/2022 12:52 AM
-Full Name: Dela Cruz , Hendery, Garcia
+Date and Time:    06/11/2022 01:08 PM
+Full Name: Park V, Chanyeol Jose, De Vega
 Sex: Male
-Date of Birth:  05/12/1999
-Age: 23
-Nationality: Filipino
-Address: Seoul, South korea
-Phone Number: 09143548961
-Landline: 
-Email Address: derydc@gmail.com
-Are you vaccinated?: Yes, fully vaccinated
-Have you been sick in the last 7 days?: No
-Sickness: 
-
-Date and Time:    06/11/2022 12:55 AM
-Full Name: Jung III, Jaehyun, 
-Sex: Male
-Date of Birth:  02/14/1997
-Age: 25
+Date of Birth:  01/01/2000
+Age: 22
 Nationality: Korean
-Address: District II, Namsan, South Korea
-Phone Number: 0916478245972
+Address: Mariano St., Poblacion East, Sampaloc, Manila
+Phone Number: 0912354698745
 Landline: 
-Email Address: jungjaes@gmail.com
-Are you vaccinated?: Yes, 1st dose only
+Email Address: pcyheol@yahoo.com
+Are you vaccinated?: Yes, fully vaccinated
 Have you been sick in the last 7 days?: Yes
-Sickness: Flu
+Sickness: Cough
 
