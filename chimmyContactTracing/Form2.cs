@@ -76,7 +76,6 @@ namespace chimmyContactTracing
             {
 
                 MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
 
             try
@@ -119,6 +118,21 @@ namespace chimmyContactTracing
 
                     MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Hide();
+                Home f1 = new Home();
+                f1.Show();
             }
             catch (Exception)
             {

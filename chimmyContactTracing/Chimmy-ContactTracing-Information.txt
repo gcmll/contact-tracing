@@ -1,14 +1,28 @@
-Date and Time:    06/11/2022 01:08 PM
-Full Name: Park V, Chanyeol Jose, De Vega
+Date and Time:    06/11/2022 03:30 PM
+Full Name: Dela Cruzal III, Vius Lienzo, Lopez
 Sex: Male
-Date of Birth:  01/01/2000
+Date of Birth:  01/31/2000
 Age: 22
-Nationality: Korean
-Address: Mariano St., Poblacion East, Sampaloc, Manila
-Phone Number: 0912354698745
+Nationality: Filipino
+Address: 373 Camarin Road, Novaliches, Las Piñas
+Phone Number: 09456123845
 Landline: 
-Email Address: pcyheol@yahoo.com
+Email Address: viuslidel@gmail.com
 Are you vaccinated?: Yes, fully vaccinated
+Have you been sick in the last 7 days?: No
+Sickness: 
+
+Date and Time:    06/11/2022 03:34 PM
+Full Name: Riego IV, Hera Lye, Hidalgo
+Sex: Female
+Date of Birth:  02/14/2002
+Age: 20
+Nationality: Filipino
+Address: Sto. Niño st., brgy. San Roque 6543 Biliran, Biliran Province
+Phone Number: 09456328754
+Landline: 
+Email Address: heralye14@gmail.com
+Are you vaccinated?: Yes, 1st dose only
 Have you been sick in the last 7 days?: Yes
 Sickness: Cough
 

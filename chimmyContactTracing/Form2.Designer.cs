@@ -46,9 +46,6 @@
             this.rdBtnFemale = new System.Windows.Forms.RadioButton();
             this.rdBtnMale = new System.Windows.Forms.RadioButton();
             this.lblSex = new System.Windows.Forms.Label();
-            this.rdButton2 = new System.Windows.Forms.RadioButton();
-            this.rdButton1 = new System.Windows.Forms.RadioButton();
-            this.label14 = new System.Windows.Forms.Label();
             this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
             this.lblBirthDate = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
@@ -78,6 +75,7 @@
             this.rdBtnYes = new System.Windows.Forms.RadioButton();
             this.lblSickQuestion = new System.Windows.Forms.Label();
             this.lblDirection = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.pnlSex.SuspendLayout();
             this.pnlVaccination.SuspendLayout();
             this.pnlSick.SuspendLayout();
@@ -88,9 +86,9 @@
             this.btnSave.BackColor = System.Drawing.Color.Snow;
             this.btnSave.Font = new System.Drawing.Font("Mont Blanc", 9.749998F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSave.ForeColor = System.Drawing.Color.Purple;
-            this.btnSave.Location = new System.Drawing.Point(449, 545);
+            this.btnSave.Location = new System.Drawing.Point(464, 545);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(118, 31);
+            this.btnSave.Size = new System.Drawing.Size(103, 25);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -231,7 +229,7 @@
             this.pnlSex.Controls.Add(this.rdBtnMale);
             this.pnlSex.Controls.Add(this.lblSex);
             this.pnlSex.ForeColor = System.Drawing.Color.Transparent;
-            this.pnlSex.Location = new System.Drawing.Point(38, 218);
+            this.pnlSex.Location = new System.Drawing.Point(38, 219);
             this.pnlSex.Name = "pnlSex";
             this.pnlSex.Size = new System.Drawing.Size(127, 44);
             this.pnlSex.TabIndex = 14;
@@ -275,46 +273,6 @@
             this.lblSex.Size = new System.Drawing.Size(26, 15);
             this.lblSex.TabIndex = 15;
             this.lblSex.Text = "Sex";
-            // 
-            // rdButton2
-            // 
-            this.rdButton2.AutoSize = true;
-            this.rdButton2.BackColor = System.Drawing.Color.Transparent;
-            this.rdButton2.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdButton2.ForeColor = System.Drawing.Color.White;
-            this.rdButton2.Location = new System.Drawing.Point(38, 218);
-            this.rdButton2.Name = "rdButton2";
-            this.rdButton2.Size = new System.Drawing.Size(59, 19);
-            this.rdButton2.TabIndex = 64;
-            this.rdButton2.TabStop = true;
-            this.rdButton2.Text = "Female";
-            this.rdButton2.UseVisualStyleBackColor = false;
-            // 
-            // rdButton1
-            // 
-            this.rdButton1.AutoSize = true;
-            this.rdButton1.BackColor = System.Drawing.Color.Transparent;
-            this.rdButton1.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rdButton1.ForeColor = System.Drawing.Color.White;
-            this.rdButton1.Location = new System.Drawing.Point(38, 218);
-            this.rdButton1.Name = "rdButton1";
-            this.rdButton1.Size = new System.Drawing.Size(49, 19);
-            this.rdButton1.TabIndex = 63;
-            this.rdButton1.TabStop = true;
-            this.rdButton1.Text = "Male";
-            this.rdButton1.UseVisualStyleBackColor = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(38, 218);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(26, 15);
-            this.label14.TabIndex = 62;
-            this.label14.Text = "Sex";
             // 
             // dtpBirthDate
             // 
@@ -646,12 +604,26 @@
             this.lblDirection.TabIndex = 45;
             this.lblDirection.Text = "*If the information is not available, kindly leave it blank.";
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Snow;
+            this.btnBack.Font = new System.Drawing.Font("Mont Blanc", 9.749998F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.ForeColor = System.Drawing.Color.Purple;
+            this.btnBack.Location = new System.Drawing.Point(355, 545);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(103, 25);
+            this.btnBack.TabIndex = 46;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(601, 596);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDirection);
             this.Controls.Add(this.pnlSick);
             this.Controls.Add(this.pnlVaccination);
@@ -673,9 +645,6 @@
             this.Controls.Add(this.dtpBirthDate);
             this.Controls.Add(this.lblBirthDate);
             this.Controls.Add(this.pnlSex);
-            this.Controls.Add(this.rdButton2);
-            this.Controls.Add(this.rdButton1);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.lblSuffix);
             this.Controls.Add(this.txtBoxSuffix);
             this.Controls.Add(this.lblMiddleName);
@@ -725,9 +694,6 @@
         private Panel pnlSex;
         private RadioButton rdBtnMale;
         private Label lblSex;
-        private RadioButton rdButton2;
-        private RadioButton rdButton1;
-        private Label label14;
         private RadioButton rdBtnFemale;
         private DateTimePicker dtpBirthDate;
         private Label lblBirthDate;
@@ -758,5 +724,6 @@
         private Label lblSickness;
         private TextBox txtBoxSickness;
         private Label lblDirection;
+        private Button btnBack;
     }
 }
