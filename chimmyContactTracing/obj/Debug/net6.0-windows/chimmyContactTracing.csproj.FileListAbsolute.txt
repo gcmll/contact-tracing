@@ -17,3 +17,4 @@ C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\
 C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\net6.0-windows\chimmyContactTracing.genruntimeconfig.cache
 C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\net6.0-windows\ref\chimmyContactTracing.dll
 C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\net6.0-windows\chimmyContactTracing.Start.resources
+C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\net6.0-windows\chimmyContactTracing.Search.resources
