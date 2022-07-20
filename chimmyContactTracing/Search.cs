@@ -17,6 +17,12 @@ namespace chimmyContactTracing
             InitializeComponent();
         }
 
+        private void Search_Load(object sender, EventArgs e)
+        {
+            btnSearch.Enabled = false;
+            dtpDate.Enabled = false;
+        }
+
         private void btnViewAllRecord_Click(object sender, EventArgs e)
         {
             try
@@ -92,6 +98,29 @@ namespace chimmyContactTracing
                 else
                 {
                     listBoxContactData.Items.Add("No Record Found.");
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void cmbBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cmbBoxFilter.Text == "" || cmbBoxFilter.Text == "Vaccination Status - Only 1st dose" || cmbBoxFilter.Text == "Vaccination Status - Fully vaccinated" ||
+                    cmbBoxFilter.Text == "Vaccination Status - Not vaccinated" || cmbBoxFilter.Text == "Have been sick in the last 7 days")
+                {
+                    btnSearch.Enabled = true;
+                    dtpDate.Enabled = false;
+                }
+                else if (cmbBoxFilter.Text == "Date")
+                {
+                    btnSearch.Enabled = true;
+                    dtpDate.Enabled = true;
                 }
             }
             catch (Exception)
