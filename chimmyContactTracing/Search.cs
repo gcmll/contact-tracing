@@ -49,7 +49,7 @@ namespace chimmyContactTracing
             }
         }
 
-        void searchFilter()
+        void searchDateFilter()
         {
             try
             {
@@ -82,22 +82,67 @@ namespace chimmyContactTracing
 
         }
 
+        void seachSelectedFIlter()
+        {
+            try
+            {
+                listBoxContactData.Items.Clear();
+
+                string contactInformation = "";
+
+                string selectedDataFilter = cmbBoxFilter.Text;   
+                string fileLocation = (@"C:\Users\camil\Documents\chimmyCT\" + selectedDataFilter + ".txt");
+
+                StreamReader outputFile;
+                outputFile = File.OpenText(fileLocation);
+
+                while (contactInformation != null)
+                {
+                    contactInformation = outputFile.ReadLine();
+
+                    if (contactInformation != null)
+                    {
+                        listBoxContactData.Items.Add(contactInformation);
+                    }
+                }
+                outputFile.Close();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             try
             {
                 listBoxContactData.Items.Clear();
 
-                string dateDataFilter = dtpDate.Text;
-                string fileLocation = (@"C:\Users\camil\Documents\chimmyCT\" + dateDataFilter + ".txt");
+                if (cmbBoxFilter.Text == "Date")
+                {
+                    string dateDataFilter = dtpDate.Text;
+                    string fileLocation = (@"C:\Users\camil\Documents\chimmyCT\" + dateDataFilter + ".txt");
 
-                if (File.Exists(fileLocation) == true)
-                {
-                    searchFilter();
+                    if (File.Exists(fileLocation) == true)
+                    {
+                        searchDateFilter();
+                    }
+                    else
+                    {
+                        listBoxContactData.Items.Add("No Record Found.");
+                    }
                 }
-                else
+                else if (cmbBoxFilter.Text == "Vaccination Status - Only 1st dose")
                 {
-                    listBoxContactData.Items.Add("No Record Found.");
+                    string vaxStatusFilter = cmbBoxFilter.Text;
+                    string fileLocation = (@"C:\Users\camil\Documents\chimmyCT\" + vaxStatusFilter + ".txt");
+
+                    if (File.Exists(fileLocation) == true)
+                    {
+                        seachSelectedFIlter();
+                    }
                 }
             }
             catch (Exception)
