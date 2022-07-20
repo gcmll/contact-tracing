@@ -23,7 +23,7 @@ namespace chimmyContactTracing
             {
                 listBoxContactData.Items.Clear();
 
-                string viewAllRecord = @"C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\Chimmy-ContactTracing-Information.txt";
+                string viewAllRecord = @".\Chimmy-ContactTracing-Information.txt";
                 
                 List<string> showRecordsList = new List<string>();
                 showRecordsList = File.ReadAllLines(viewAllRecord).ToList();
