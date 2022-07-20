@@ -376,9 +376,9 @@
             this.lblExactAddress.ForeColor = System.Drawing.Color.White;
             this.lblExactAddress.Location = new System.Drawing.Point(38, 340);
             this.lblExactAddress.Name = "lblExactAddress";
-            this.lblExactAddress.Size = new System.Drawing.Size(260, 14);
+            this.lblExactAddress.Size = new System.Drawing.Size(299, 14);
             this.lblExactAddress.TabIndex = 27;
-            this.lblExactAddress.Text = "House No., Street/Block, Barangay, Town/City, Provicne";
+            this.lblExactAddress.Text = "House No., Street/Block, Barangay, Town/City, Province or Area";
             // 
             // lblPhoneNumber
             // 

@@ -11,7 +11,7 @@ namespace chimmyContactTracing
         {
             try
             {
-                DialogResult consentConfirmation = MessageBox.Show("By clicking 'OK' you agree to our privacy policy.", "Chimmy - Contact Tracing",
+                DialogResult consentConfirmation = MessageBox.Show("By clicking 'OK' you agree to your information being collected, and used for the purpose of Contact Tracing.", "Chimmy - Contact Tracing",
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
                 if (consentConfirmation == DialogResult.OK)
