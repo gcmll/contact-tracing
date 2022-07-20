@@ -82,7 +82,7 @@ namespace chimmyContactTracing
 
         }
 
-        void seachSelectedFIlter()
+        void seachSelectedFilter()
         {
             try
             {
@@ -141,7 +141,7 @@ namespace chimmyContactTracing
 
                     if (File.Exists(fileLocation) == true)
                     {
-                        seachSelectedFIlter();
+                        seachSelectedFilter();
                     }
                 }
                 else if (cmbBoxFilter.Text == "Vaccination Status - Fully vaccinated")
@@ -151,7 +151,7 @@ namespace chimmyContactTracing
 
                     if (File.Exists(fileLocation) == true)
                     {
-                        seachSelectedFIlter();
+                        seachSelectedFilter();
                     }
                 }
                 else if (cmbBoxFilter.Text == "Vaccination Status - Not vaccinated")
@@ -161,7 +161,17 @@ namespace chimmyContactTracing
 
                     if (File.Exists(fileLocation) == true)
                     {
-                        seachSelectedFIlter();
+                        seachSelectedFilter();
+                    }
+                }
+                else if (cmbBoxFilter.Text == "Have been sick in the last 7 days")
+                {
+                    string sickStatusFilter = cmbBoxFilter.Text;
+                    string fileLocation = (@"C:\Users\camil\Documents\chimmyCT\" + sickStatusFilter + ".txt");
+
+                    if (File.Exists(fileLocation) == true)
+                    {
+                        seachSelectedFilter();
                     }
                 }
             }
