@@ -144,6 +144,16 @@ namespace chimmyContactTracing
                         seachSelectedFIlter();
                     }
                 }
+                else if (cmbBoxFilter.Text == "Vaccination Status - Fully vaccinated")
+                {
+                    string vaxStatusFilter = cmbBoxFilter.Text;
+                    string fileLocation = (@"C:\Users\camil\Documents\chimmyCT\" + vaxStatusFilter + ".txt");
+
+                    if (File.Exists(fileLocation) == true)
+                    {
+                        seachSelectedFIlter();
+                    }
+                }
             }
             catch (Exception)
             {
