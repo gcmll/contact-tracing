@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search));
             this.listBoxContactData = new System.Windows.Forms.ListBox();
             this.btnViewAllRecord = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxContactData
@@ -55,12 +56,26 @@
             this.btnViewAllRecord.UseVisualStyleBackColor = false;
             this.btnViewAllRecord.Click += new System.EventHandler(this.btnViewAllRecord_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Snow;
+            this.btnBack.Font = new System.Drawing.Font("Mont Blanc", 9.749998F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.ForeColor = System.Drawing.Color.Purple;
+            this.btnBack.Location = new System.Drawing.Point(475, 458);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(103, 25);
+            this.btnBack.TabIndex = 57;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(601, 500);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnViewAllRecord);
             this.Controls.Add(this.listBoxContactData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -77,5 +92,6 @@
 
         private ListBox listBoxContactData;
         private Button btnViewAllRecord;
+        private Button btnBack;
     }
 }
