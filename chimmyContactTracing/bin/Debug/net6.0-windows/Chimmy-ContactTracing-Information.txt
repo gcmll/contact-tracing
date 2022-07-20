@@ -1,4 +1,4 @@
-Date and Time:    06/11/2022 03:30 PM
+Date and Time:    06/11/2022 12:30 PM
 Full Name: Dela Cruzal III, Vius Lienzo, Lopez
 Sex: Male
 Date of Birth:  01/31/2000
@@ -12,7 +12,7 @@ Are you vaccinated?: Yes, fully vaccinated
 Have you been sick in the last 7 days?: No
 Sickness: 
 
-Date and Time:    06/11/2022 03:34 PM
+Date and Time:    06/11/2022 02:30 PM
 Full Name: Riego IV, Hera Lye, Hidalgo
 Sex: Female
 Date of Birth:  02/14/2002
@@ -26,7 +26,7 @@ Are you vaccinated?: Yes, 1st dose only
 Have you been sick in the last 7 days?: Yes
 Sickness: Cough
 
-Date and Time:    07/20/2022 09:34 AM
+Date and Time:    06/14/2022 09:34 AM
 Full Name: Fortunato , Thraia Gabriella, Aragon
 Sex: Female
 Date of Birth:  07/04/2000
@@ -40,3 +40,100 @@ Are you vaccinated?: Yes, fully vaccinated
 Have you been sick in the last 7 days?: No
 Sickness: 
 
+Date and Time:    06/15/2022 08:55 AM
+Full Name: Rivas , Wade, Buendia
+Sex: Male
+Date of Birth:  01/10/1995
+Age: 27
+Nationality: Filipino
+Address: Philtrust Building, Magallanes corner F. Gonzales Street, Cebu City, Cebu
+Phone Number: 09957414940
+Landline: 256-1258
+Email Address: waderivaspr@gmail.com
+Are you vaccinated?: Yes, fully vaccinated
+Have you been sick in the last 7 days?: Yes
+Sickness: Colds
+
+Date and Time:    06/15/2022 11:45 PM
+Full Name: Elizalde , Rozen Gaiser, Sarmiento
+Sex: Male
+Date of Birth:  02/20/1993
+Age: 29
+Nationality: Filipino
+Address: 2231 Aurora Boulevard, Pasay City, Metro Manila
+Phone Number: 09797730846
+Landline: 
+Email Address: rgelizalde20@gmail.com
+Are you vaccinated?: Yes, 1st dose only
+Have you been sick in the last 7 days?: No
+Sickness: 
+
+Date and Time:    06/17/2022 01:00 PM
+Full Name: Alleje , Riguel Jameson, Hernaez
+Sex: Male
+Date of Birth:  02/14/1997
+Age: 25
+Nationality: Korean
+Address: General Santos Avenue, Upper Bicutan, Taguig City, Metro Manila
+Phone Number: 09456137845
+Landline: 
+Email Address: 
+Are you vaccinated?: Yes, fully vaccinated
+Have you been sick in the last 7 days?: No
+Sickness: 
+
+Date and Time:    06/18/2022 12:03 PM
+Full Name: Pascual , Aurora Veronica, Rama
+Sex: Female
+Date of Birth:  11/12/1984
+Age: 37
+Nationality: Filipino
+Address: JP Rizal, Makati City, Metro Manila
+Phone Number: 09068970049
+Landline: 
+Email Address: av_pascual@gmail.com
+Are you vaccinated?: Yes, 1st dose only
+Have you been sick in the last 7 days?: Yes
+Sickness: Sore Throat
+
+Date and Time:    06/19/2022 02:44 PM
+Full Name: Shintarou , Midorima, Hiroshi
+Sex: Male
+Date of Birth:  05/30/1995
+Age: 27
+Nationality: Japanese
+Address: 9/F Fedman Suites199 Salcedo Street, Legaspi Village 1200, Makati City, Metro Manila
+Phone Number: 09268166223
+Landline: 733-7684
+Email Address: 
+Are you vaccinated?: No
+Have you been sick in the last 7 days?: Yes
+Sickness: Fever
+
+Date and Time:    06/20/2022 11:00 AM
+Full Name: Riego , Jaxon Archibald, Manuel
+Sex: Male
+Date of Birth:  04/30/1978
+Age: 44
+Nationality: Filipino
+Address: Ortigas Home Depot, Dona Julia Vargas Avenue, Pasig City, Metro Manila
+Phone Number: 
+Landline: (02) 638-4163
+Email Address: jam00manuel@yahoo.com
+Are you vaccinated?: Yes, 1st dose only
+Have you been sick in the last 7 days?: No
+Sickness: 
+
+Date and Time:    06/20/2022 11:19 AM
+Full Name: Leviste , Zariyah, Miguel
+Sex: Female
+Date of Birth:  12/25/1999
+Age: 22
+Nationality: Filipino
+Address: Ortigas Home Depot, Dona jUlia Vargas Avenue, Pasig City, Metro Manila
+Phone Number: 
+Landline: (02) 638-4163
+Email Address: 
+Are you vaccinated?: Yes, fully vaccinated
+Have you been sick in the last 7 days?: Yes
+Sickness: Flu

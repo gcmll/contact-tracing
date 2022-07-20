@@ -43,6 +43,64 @@ namespace chimmyContactTracing
             }
         }
 
+        void searchFilter()
+        {
+            try
+            {
+                listBoxContactData.Items.Clear();
+
+                string contactInformation = "";
+
+                string dateData = dtpDate.Text;
+                string fileLocation = (@"C:\Users\camil\Documents\chimmyCT\" + dateData + ".txt");
+
+                StreamReader outputFile;
+                outputFile = File.OpenText(fileLocation);
+
+                while (contactInformation != null)
+                {
+                    contactInformation = outputFile.ReadLine();
+
+                    if (contactInformation != null)
+                    {
+                        listBoxContactData.Items.Add(contactInformation);
+                    }
+                }
+                outputFile.Close();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                listBoxContactData.Items.Clear();
+
+                string dateDataFilter = dtpDate.Text;
+                string fileLocation = (@"C:\Users\camil\Documents\chimmyCT\" + dateDataFilter + ".txt");
+
+                if (File.Exists(fileLocation) == true)
+                {
+                    searchFilter();
+                }
+                else
+                {
+                    listBoxContactData.Items.Add("No Record Found.");
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
             try
