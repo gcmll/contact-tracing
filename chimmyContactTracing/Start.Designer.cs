@@ -77,10 +77,13 @@
             this.lblDirection = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.pBoxScan = new System.Windows.Forms.PictureBox();
+            this.txtBoxQRDecode = new System.Windows.Forms.TextBox();
+            this.pBoxAutoFill = new System.Windows.Forms.PictureBox();
             this.pnlSex.SuspendLayout();
             this.pnlVaccination.SuspendLayout();
             this.pnlSick.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxScan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxAutoFill)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
@@ -630,12 +633,33 @@
             this.pBoxScan.TabStop = false;
             this.pBoxScan.Click += new System.EventHandler(this.pBoxScan_Click);
             // 
+            // txtBoxQRDecode
+            // 
+            this.txtBoxQRDecode.Location = new System.Drawing.Point(624, 165);
+            this.txtBoxQRDecode.Multiline = true;
+            this.txtBoxQRDecode.Name = "txtBoxQRDecode";
+            this.txtBoxQRDecode.Size = new System.Drawing.Size(278, 241);
+            this.txtBoxQRDecode.TabIndex = 65;
+            // 
+            // pBoxAutoFill
+            // 
+            this.pBoxAutoFill.BackColor = System.Drawing.Color.Transparent;
+            this.pBoxAutoFill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pBoxAutoFill.BackgroundImage")));
+            this.pBoxAutoFill.Location = new System.Drawing.Point(100, 565);
+            this.pBoxAutoFill.Name = "pBoxAutoFill";
+            this.pBoxAutoFill.Size = new System.Drawing.Size(60, 60);
+            this.pBoxAutoFill.TabIndex = 66;
+            this.pBoxAutoFill.TabStop = false;
+            this.pBoxAutoFill.Click += new System.EventHandler(this.pBoxAutoFill_Click);
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
             this.ClientSize = new System.Drawing.Size(599, 651);
+            this.Controls.Add(this.pBoxAutoFill);
+            this.Controls.Add(this.txtBoxQRDecode);
             this.Controls.Add(this.pBoxScan);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDirection);
@@ -679,6 +703,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chimmy - Contact Tracing";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_FormClosing);
+            this.Load += new System.EventHandler(this.Start_Load);
             this.pnlSex.ResumeLayout(false);
             this.pnlSex.PerformLayout();
             this.pnlVaccination.ResumeLayout(false);
@@ -686,6 +711,7 @@
             this.pnlSick.ResumeLayout(false);
             this.pnlSick.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxScan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxAutoFill)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -741,5 +767,7 @@
         private Label lblDirection;
         private Button btnBack;
         private PictureBox pBoxScan;
+        private TextBox txtBoxQRDecode;
+        private PictureBox pBoxAutoFill;
     }
 }

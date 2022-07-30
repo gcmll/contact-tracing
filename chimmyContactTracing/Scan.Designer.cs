@@ -30,23 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Scan));
-            this.cmbBoxDevice = new System.Windows.Forms.ComboBox();
             this.lblDevice = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.pBoxCapture = new System.Windows.Forms.PictureBox();
             this.timerScan = new System.Windows.Forms.Timer(this.components);
             this.txtBoxQRDecode = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
+            this.cmbBoxDevice = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxCapture)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cmbBoxDevice
-            // 
-            this.cmbBoxDevice.FormattingEnabled = true;
-            this.cmbBoxDevice.Location = new System.Drawing.Point(81, 107);
-            this.cmbBoxDevice.Name = "cmbBoxDevice";
-            this.cmbBoxDevice.Size = new System.Drawing.Size(237, 23);
-            this.cmbBoxDevice.TabIndex = 2;
             // 
             // lblDevice
             // 
@@ -108,18 +100,27 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // cmbBoxDevice
+            // 
+            this.cmbBoxDevice.FormattingEnabled = true;
+            this.cmbBoxDevice.Location = new System.Drawing.Point(81, 107);
+            this.cmbBoxDevice.Name = "cmbBoxDevice";
+            this.cmbBoxDevice.Size = new System.Drawing.Size(237, 23);
+            this.cmbBoxDevice.TabIndex = 66;
+            // 
             // Scan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 553);
+            this.ClientSize = new System.Drawing.Size(440, 553);
+            this.Controls.Add(this.cmbBoxDevice);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtBoxQRDecode);
             this.Controls.Add(this.pBoxCapture);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblDevice);
-            this.Controls.Add(this.cmbBoxDevice);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Scan";
@@ -134,13 +135,12 @@
         }
 
         #endregion
-
-        private ComboBox cmbBoxDevice;
         private Label lblDevice;
         private Button btnStart;
         private PictureBox pBoxCapture;
         private System.Windows.Forms.Timer timerScan;
         private TextBox txtBoxQRDecode;
         private Button btnBack;
+        private ComboBox cmbBoxDevice;
     }
 }

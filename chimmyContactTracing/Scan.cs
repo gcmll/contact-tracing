@@ -33,6 +33,8 @@ namespace chimmyContactTracing
                 foreach (FilterInfo filterINfo in filterInformationCollection)
                     cmbBoxDevice.Items.Add(filterINfo.Name);
                 cmbBoxDevice.SelectedIndex = 0;
+
+                txtBoxQRDecode.Text = Start.textPassedStart;
             }
             catch (Exception)
             {
@@ -93,7 +95,7 @@ namespace chimmyContactTracing
 
                         if (txtBoxQRDecode.Text == "")
                         {
-                            MessageBox.Show("No QR code detected. Please scan the QR code again.", "Chimmy - Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("No QR code detected, please scan the QR code again.", "Chimmy - Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
@@ -102,7 +104,6 @@ namespace chimmyContactTracing
 
                             if (QRCodeResult == DialogResult.OK)
                             {
-
                                 textPassedScan = txtBoxQRDecode.Text;
                                 Hide();
                                 Start f2 = new Start();
