@@ -76,9 +76,11 @@
             this.lblSickQuestion = new System.Windows.Forms.Label();
             this.lblDirection = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.pBoxScan = new System.Windows.Forms.PictureBox();
             this.pnlSex.SuspendLayout();
             this.pnlVaccination.SuspendLayout();
             this.pnlSick.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxScan)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
@@ -86,7 +88,7 @@
             this.btnSave.BackColor = System.Drawing.Color.Snow;
             this.btnSave.Font = new System.Drawing.Font("Mont Blanc", 9.749998F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSave.ForeColor = System.Drawing.Color.Purple;
-            this.btnSave.Location = new System.Drawing.Point(464, 545);
+            this.btnSave.Location = new System.Drawing.Point(464, 600);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(103, 25);
             this.btnSave.TabIndex = 1;
@@ -277,7 +279,7 @@
             // dtpBirthDate
             // 
             this.dtpBirthDate.Checked = false;
-            this.dtpBirthDate.CustomFormat = " MM/dd/yyyy";
+            this.dtpBirthDate.CustomFormat = " MM-dd-yyyy";
             this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpBirthDate.Location = new System.Drawing.Point(177, 236);
             this.dtpBirthDate.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
@@ -609,7 +611,7 @@
             this.btnBack.BackColor = System.Drawing.Color.Snow;
             this.btnBack.Font = new System.Drawing.Font("Mont Blanc", 9.749998F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnBack.ForeColor = System.Drawing.Color.Purple;
-            this.btnBack.Location = new System.Drawing.Point(355, 545);
+            this.btnBack.Location = new System.Drawing.Point(355, 600);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(103, 25);
             this.btnBack.TabIndex = 46;
@@ -617,12 +619,24 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // pBoxScan
+            // 
+            this.pBoxScan.BackColor = System.Drawing.Color.Transparent;
+            this.pBoxScan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pBoxScan.BackgroundImage")));
+            this.pBoxScan.Location = new System.Drawing.Point(39, 565);
+            this.pBoxScan.Name = "pBoxScan";
+            this.pBoxScan.Size = new System.Drawing.Size(60, 60);
+            this.pBoxScan.TabIndex = 47;
+            this.pBoxScan.TabStop = false;
+            this.pBoxScan.Click += new System.EventHandler(this.pBoxScan_Click);
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::chimmyContactTracing.Properties.Resources.ChimmyCT_Start_Background;
-            this.ClientSize = new System.Drawing.Size(601, 596);
+            this.ClientSize = new System.Drawing.Size(599, 651);
+            this.Controls.Add(this.pBoxScan);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblDirection);
             this.Controls.Add(this.pnlSick);
@@ -671,6 +685,7 @@
             this.pnlVaccination.PerformLayout();
             this.pnlSick.ResumeLayout(false);
             this.pnlSick.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxScan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -725,5 +740,6 @@
         private TextBox txtBoxSickness;
         private Label lblDirection;
         private Button btnBack;
+        private PictureBox pBoxScan;
     }
 }

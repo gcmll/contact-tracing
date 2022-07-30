@@ -140,5 +140,20 @@ namespace chimmyContactTracing
                 MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void pBoxScan_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Hide();
+                Scan f4 = new Scan();
+                f4.Show();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

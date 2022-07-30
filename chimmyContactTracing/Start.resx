@@ -57,10 +57,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pBoxScan.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
