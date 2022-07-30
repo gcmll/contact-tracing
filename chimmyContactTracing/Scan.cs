@@ -15,6 +15,8 @@ namespace chimmyContactTracing
 {
     public partial class Scan : Form
     {
+        public static string textPassedScan;
+
         public Scan()
         {
             InitializeComponent();
@@ -91,12 +93,21 @@ namespace chimmyContactTracing
 
                         if (txtBoxQRDecode.Text == "")
                         {
-                            MessageBox.Show("No QR code detected. Please scan your QR code again.", "Chimmy - Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("No QR code detected. Please scan the QR code again.", "Chimmy - Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
-                            DialogResult QRCodeResult = MessageBox.Show("Your QR code was scanned successfully.", "Chimmy - Contact Tracing",
+                            DialogResult QRCodeResult = MessageBox.Show("QR code was scanned successfully.", "Chimmy - Contact Tracing",
                             MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+
+                            if (QRCodeResult == DialogResult.OK)
+                            {
+
+                                textPassedScan = txtBoxQRDecode.Text;
+                                Hide();
+                                Start f2 = new Start();
+                                f2.Show();
+                            }
                         }
                     }
                 }
