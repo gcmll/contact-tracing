@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using ZXing;
 
 namespace chimmyContactTracing
 {
@@ -45,6 +46,7 @@ namespace chimmyContactTracing
                 scannerDevice = new VideoCaptureDevice(filterInformationCollection[cmbBoxDevice.SelectedIndex].MonikerString);
                 scannerDevice.NewFrame += ScannerDevice_NewFrame;
                 scannerDevice.Start();
+                timerScan.Start();
             }
             catch (Exception)
             {
@@ -68,15 +70,33 @@ namespace chimmyContactTracing
 
         private void Scan_FormClosing(object sender, FormClosingEventArgs e)
         {
-            try
-            {
-                if (scannerDevice.IsRunning == true)
-                    scannerDevice.Stop();
-            }
-            catch (Exception)
-            {
+             if (scannerDevice.IsRunning == true)
+                 scannerDevice.Stop();
+        }
 
-                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        private void timerScan_Tick(object sender, EventArgs e)
+        {
+            if (pBoxCapture.Image != null)
+            {
+                try
+                {
+                    if (pBoxCapture.Image != null)
+                    {
+                        BarcodeReader QRCodeReader = new BarcodeReader();
+                        Result QRInformation = QRCodeReader.Decode((Bitmap)pBoxCapture.Image);
+
+                        if (QRInformation != null)
+                            txtBoxQRDecode.Text = QRInformation.ToString();
+                            timerScan.Stop();
+                            if (scannerDevice.IsRunning == true)
+                                scannerDevice.Stop();
+                    }
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }      
             }
         }
     }

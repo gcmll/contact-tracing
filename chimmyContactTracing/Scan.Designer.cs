@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Scan));
             this.cmbBoxDevice = new System.Windows.Forms.ComboBox();
             this.lblDevice = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.pBoxCapture = new System.Windows.Forms.PictureBox();
+            this.timerScan = new System.Windows.Forms.Timer(this.components);
+            this.txtBoxQRDecode = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxCapture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,12 +81,26 @@
             this.pBoxCapture.TabIndex = 63;
             this.pBoxCapture.TabStop = false;
             // 
+            // timerScan
+            // 
+            this.timerScan.Interval = 1000;
+            this.timerScan.Tick += new System.EventHandler(this.timerScan_Tick);
+            // 
+            // txtBoxQRDecode
+            // 
+            this.txtBoxQRDecode.Location = new System.Drawing.Point(462, 141);
+            this.txtBoxQRDecode.Multiline = true;
+            this.txtBoxQRDecode.Name = "txtBoxQRDecode";
+            this.txtBoxQRDecode.Size = new System.Drawing.Size(300, 350);
+            this.txtBoxQRDecode.TabIndex = 64;
+            // 
             // Scan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 553);
+            this.Controls.Add(this.txtBoxQRDecode);
             this.Controls.Add(this.pBoxCapture);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblDevice);
@@ -107,5 +124,7 @@
         private Label lblDevice;
         private Button btnStart;
         private PictureBox pBoxCapture;
+        private System.Windows.Forms.Timer timerScan;
+        private TextBox txtBoxQRDecode;
     }
 }
