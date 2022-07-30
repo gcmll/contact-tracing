@@ -87,7 +87,12 @@ namespace chimmyContactTracing
 
                         if (QRInformation != null)
                             txtBoxQRDecode.Text = QRInformation.ToString();
-                            timerScan.Stop();
+                        timerScan.Stop();
+
+                        if (txtBoxQRDecode.Text == "")
+                        {
+                            MessageBox.Show("No QR code detected. Please scan your QR code again.", "Chimmy - Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
                 catch (Exception)
