@@ -88,8 +88,6 @@ namespace chimmyContactTracing
                         if (QRInformation != null)
                             txtBoxQRDecode.Text = QRInformation.ToString();
                             timerScan.Stop();
-                            if (scannerDevice.IsRunning == true)
-                                scannerDevice.Stop();
                     }
                 }
                 catch (Exception)
@@ -97,6 +95,21 @@ namespace chimmyContactTracing
 
                     MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }      
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Hide();
+                Start f2 = new Start();
+                f2.Show();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

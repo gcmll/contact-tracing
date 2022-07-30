@@ -36,6 +36,7 @@
             this.pBoxCapture = new System.Windows.Forms.PictureBox();
             this.timerScan = new System.Windows.Forms.Timer(this.components);
             this.txtBoxQRDecode = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxCapture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             this.cmbBoxDevice.Location = new System.Drawing.Point(81, 107);
             this.cmbBoxDevice.Name = "cmbBoxDevice";
             this.cmbBoxDevice.Size = new System.Drawing.Size(237, 23);
-            this.cmbBoxDevice.TabIndex = 0;
+            this.cmbBoxDevice.TabIndex = 2;
             // 
             // lblDevice
             // 
@@ -94,12 +95,26 @@
             this.txtBoxQRDecode.Size = new System.Drawing.Size(300, 350);
             this.txtBoxQRDecode.TabIndex = 64;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Snow;
+            this.btnBack.Font = new System.Drawing.Font("Mont Blanc", 9.749998F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBack.ForeColor = System.Drawing.Color.Purple;
+            this.btnBack.Location = new System.Drawing.Point(311, 503);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(107, 25);
+            this.btnBack.TabIndex = 65;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Scan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 553);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtBoxQRDecode);
             this.Controls.Add(this.pBoxCapture);
             this.Controls.Add(this.btnStart);
@@ -126,5 +141,6 @@
         private PictureBox pBoxCapture;
         private System.Windows.Forms.Timer timerScan;
         private TextBox txtBoxQRDecode;
+        private Button btnBack;
     }
 }
