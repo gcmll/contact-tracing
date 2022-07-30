@@ -19,3 +19,8 @@ C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\
 C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\net6.0-windows\chimmyContactTracing.genruntimeconfig.cache
 C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\net6.0-windows\ref\chimmyContactTracing.dll
 C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\net6.0-windows\chimmyContactTracing.Scan.resources
+C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\bin\Debug\net6.0-windows\zxing.dll
+C:\Users\camil\source\repos\chimmyContactTracing\chimmyContactTracing\obj\Debug\net6.0-windows\chimmyContactTracing.csproj.CopyComplete
