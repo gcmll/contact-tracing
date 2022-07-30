@@ -24,10 +24,38 @@ namespace chimmyContactTracing
 
         private void Scan_Load(object sender, EventArgs e)
         {
-            filterInformationCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            foreach (FilterInfo filterINfo in filterInformationCollection)
-                cmbBoxDevice.Items.Add(filterINfo.Name);
-            cmbBoxDevice.SelectedIndex = 0; 
+            try
+            {
+                filterInformationCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+                foreach (FilterInfo filterINfo in filterInformationCollection)
+                    cmbBoxDevice.Items.Add(filterINfo.Name);
+                cmbBoxDevice.SelectedIndex = 0;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                scannerDevice = new VideoCaptureDevice(filterInformationCollection[cmbBoxDevice.SelectedIndex].MonikerString);
+                scannerDevice.NewFrame += ScannerDevice_NewFrame;
+                scannerDevice.Start();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);               
+            }      
+        }
+
+        private void ScannerDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            pBoxCapture.Image = (Bitmap)eventArgs.Frame.Clone();          
         }
     }
 }
