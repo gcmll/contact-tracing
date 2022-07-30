@@ -46,7 +46,7 @@
             this.lblDevice.BackColor = System.Drawing.Color.Transparent;
             this.lblDevice.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDevice.ForeColor = System.Drawing.Color.White;
-            this.lblDevice.Location = new System.Drawing.Point(23, 108);
+            this.lblDevice.Location = new System.Drawing.Point(20, 108);
             this.lblDevice.Name = "lblDevice";
             this.lblDevice.Size = new System.Drawing.Size(52, 17);
             this.lblDevice.TabIndex = 61;
@@ -103,9 +103,9 @@
             // cmbBoxDevice
             // 
             this.cmbBoxDevice.FormattingEnabled = true;
-            this.cmbBoxDevice.Location = new System.Drawing.Point(81, 107);
+            this.cmbBoxDevice.Location = new System.Drawing.Point(78, 107);
             this.cmbBoxDevice.Name = "cmbBoxDevice";
-            this.cmbBoxDevice.Size = new System.Drawing.Size(237, 23);
+            this.cmbBoxDevice.Size = new System.Drawing.Size(240, 23);
             this.cmbBoxDevice.TabIndex = 66;
             // 
             // Scan

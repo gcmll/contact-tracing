@@ -236,7 +236,14 @@ namespace chimmyContactTracing
 
         private void pBoxAutoFill_Click(object sender, EventArgs e)
         {
-            autoFill();           
+            if (txtBoxQRDecode.Text == "")
+            {
+                MessageBox.Show("Please scan the QR code first.", "Invalid Request", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                autoFill();
+            }
         }
     }
 }
