@@ -93,6 +93,11 @@ namespace chimmyContactTracing
                         {
                             MessageBox.Show("No QR code detected. Please scan your QR code again.", "Chimmy - Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+                        else
+                        {
+                            DialogResult QRCodeResult = MessageBox.Show("Your QR code was scanned successfully.", "Chimmy - Contact Tracing",
+                            MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                        }
                     }
                 }
                 catch (Exception)
