@@ -93,6 +93,7 @@
             this.Name = "Scan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chimmy - Contact Tracing";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Scan_FormClosing);
             this.Load += new System.EventHandler(this.Scan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pBoxCapture)).EndInit();
             this.ResumeLayout(false);

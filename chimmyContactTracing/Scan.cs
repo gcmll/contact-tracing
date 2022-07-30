@@ -55,7 +55,29 @@ namespace chimmyContactTracing
 
         private void ScannerDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            pBoxCapture.Image = (Bitmap)eventArgs.Frame.Clone();          
+            try
+            {
+                pBoxCapture.Image = (Bitmap)eventArgs.Frame.Clone();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }                    
+        }
+
+        private void Scan_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                if (scannerDevice.IsRunning == true)
+                    scannerDevice.Stop();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("An error occured.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
